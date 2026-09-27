@@ -1,0 +1,319 @@
+{
+  "lang": "en",
+  "path": "/en/",
+  "alternate": {
+    "lang": "ja",
+    "label": "日本語",
+    "path": "/"
+  },
+  "meta": {
+    "title": "Genki Ikeda | Software Engineer",
+    "description": "Software engineer who runs development — from requirements to implementation, review, and merge — on a self-built autonomous development system. Founder of 0ai Inc."
+  },
+  "labels": {
+    "about": "About",
+    "system": "Autonomous development system",
+    "experience": "Experience",
+    "skills": "Skills",
+    "links": "Links",
+    "tech": "Tech",
+    "present": "Present"
+  },
+  "name": "Genki Ikeda",
+  "nameSub": "池田 元気",
+  "role": "Software Engineer / Founder of 0ai Inc.",
+  "tagline": "I build the system that lets AI agents do the development, and run everything from clarifying requirements to design, implementation, review, and merge on it.",
+  "about": [
+    "I have worked on full-stack web and cloud development since 2019. Working mostly with startups and nonprofits, I have often built the frontend, backend, and infrastructure of new products on my own.",
+    "Since 2024 I have focused on building products with generative AI. I led generative AI products as CTO and tech lead at a startup, and since October 2025 I have worked as a contract AI engineer at a SaaS company serving the pharmaceutical industry. In January 2026 I founded 0ai Inc., where I build products in which AI agents carry out business operations on their own.",
+    "I also hand my own development over to an autonomous development system I built. People focus on goals and judgment calls; agents handle the repetitive work of implementing, verifying, and merging. That is how I work every day."
+  ],
+  "system": {
+    "lead": "A development platform in which agents follow defined procedures from clarifying requirements all the way to merging and cleaning up. The procedures and decision rules are kept independent of the agent runtime, so the same workflow runs on both Claude Code and Codex.",
+    "steps": [
+      {
+        "title": "Requirements and design",
+        "body": "Goals and acceptance criteria are settled through dialogue. Important decisions are challenged by a separate reviewer agent that has no access to the conversation that produced them."
+      },
+      {
+        "title": "Implementation",
+        "body": "Each piece of work automatically gets its own issue, pull request, and isolated worktree, so several tasks can be implemented in parallel."
+      },
+      {
+        "title": "Verification",
+        "body": "Besides tests, a reviewer agent without the authoring context checks the result against the acceptance criteria. Anything where appearance matters is checked in a real rendering."
+      },
+      {
+        "title": "Merge and cleanup",
+        "body": "Merging, cleaning up branches and worktrees, and updating issues and project status are all automated."
+      },
+      {
+        "title": "Accumulated knowledge",
+        "body": "The reasons and background behind decisions are saved as memories and recalled in later work. Failures feed back into fixing the procedures themselves."
+      },
+      {
+        "title": "Always-on operation",
+        "body": "Resident processes pick up requests from Slack and scheduled tasks, and notify me only when a decision needs a human."
+      }
+    ],
+    "stats": [
+      {
+        "value": "~800",
+        "label": "pull requests merged across my company's repositories, January–September 2026"
+      },
+      {
+        "value": "163",
+        "label": "pull requests merged in September 2026 (27 days) on the platform's own codebase"
+      }
+    ],
+    "note": "Figures counted from GitHub records as of September 27, 2026.",
+    "highlights": [
+      {
+        "title": "Implementation is delegated",
+        "body": "I rarely drive the terminal (TUI) myself to implement anything."
+      },
+      {
+        "title": "So is upstream communication",
+        "body": "The upstream communication that development needs — talking with teammates, confirming specifications — is handled by AI as well. The only part I do myself is attending the actual meetings."
+      },
+      {
+        "title": "A closed context",
+        "body": "Meeting content is handed to the AI too, so work moves forward with every piece of context the job needs already in the AI's hands."
+      }
+    ],
+    "link": {
+      "label": "About Mipockle, the AI work partner behind this way of working",
+      "url": "https://0ai-inc.com/en/mipockle/"
+    }
+  },
+  "experience": [
+    {
+      "id": "0ai",
+      "period": "Jan 2026 – Present",
+      "org": "0ai Inc.",
+      "position": "Founder",
+      "points": [
+        "Building Deprex, a platform where AI agents live inside a company's Slack, email, and documents and run business operations 24/7.",
+        "Building other AI agent products, including a meeting agent that joins calls to add context and advice, and a personal AI assistant that carries out everyday tasks.",
+        "Designing, building, and operating the autonomous development system that runs the company's development and operations."
+      ],
+      "tech": [
+        "Claude Code",
+        "Codex",
+        "Python",
+        "TypeScript",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "pharma-saas",
+      "period": "Oct 2025 – Present",
+      "org": "SaaS company serving the pharmaceutical industry",
+      "position": "AI Engineer (contract)",
+      "points": [
+        "Designed and built AI tools that produce materials for pharmaceutical companies — web pages, slides, animated slide videos, and AI avatar videos — including web pages generated from PDFs, slides generated from papers, and script generation.",
+        "Integrated speech synthesis and AI avatar APIs and built the video generation pipeline.",
+        "Rolled out a coding agent (Claude Code) environment to the team and set up the design and evaluation framework for its agents."
+      ],
+      "tech": [
+        "TypeScript",
+        "React",
+        "Remotion",
+        "Python",
+        "LangGraph",
+        "Langfuse",
+        "AWS",
+        "Terraform"
+      ]
+    },
+    {
+      "id": "ai-startup",
+      "period": "Mar 2024 – May 2025",
+      "org": "Startup",
+      "position": "CTO / Tech Lead (full-time; seconded as a director to a subsidiary)",
+      "points": [
+        "At the subsidiary, built a grief-tech service that lets people talk with the deceased, combining voice cloning, lip sync, and video generated to match the conversation.",
+        "At the parent company, built a tool that analyzes why social videos go viral and a tool that automatically generates YouTube videos. Published about 300 generated videos in the first three weeks, reaching 350,000 total views.",
+        "Set up deployment with Terraform and GitHub Actions in two weeks. A serverless-first architecture cut infrastructure costs to about one fifth of an always-on server setup.",
+        "As product owner, led requirements, the roadmap, and task management for a team of three."
+      ],
+      "tech": [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "LangGraph",
+        "LangSmith",
+        "Next.js",
+        "AWS",
+        "Terraform",
+        "Gemini API"
+      ]
+    },
+    {
+      "id": "robo-advisor",
+      "period": "Jul 2023 – Mar 2024",
+      "org": "Asset management company",
+      "position": "Web Engineer (freelance)",
+      "points": [
+        "Developed a robo-advisor web app: support for Japan's new NISA tax-free investment program, a large refactoring of the recurring investment settings, and public identity verification with the My Number Card.",
+        "Improved how the team ran Scrum and raised its velocity about 2.5×. Worked in English with international team members."
+      ],
+      "tech": [
+        "React",
+        "Recoil",
+        "AWS Amplify",
+        "Python",
+        "FastAPI"
+      ]
+    },
+    {
+      "id": "education-npo",
+      "period": "Aug 2021 – Aug 2024",
+      "org": "Education nonprofit",
+      "position": "Engineer (freelance, sole developer)",
+      "points": [
+        "Built, on my own from requirements to operation, a web system that manages reservations for free tutoring sessions and assigns students to locations.",
+        "Set up a serverless architecture with infrastructure as code, CI/CD, automated integration tests, and Slack alerts on failure, keeping it running with little operational effort."
+      ],
+      "tech": [
+        "React",
+        "Next.js",
+        "Python",
+        "FastAPI",
+        "AWS Lambda",
+        "DynamoDB",
+        "Serverless Framework",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "id": "car-superapp",
+      "period": "Apr 2023 – May 2023",
+      "org": "Automotive services company",
+      "position": "Mobile App Engineer (freelance)",
+      "points": [
+        "Worked on requirements and specifications for a super app that brings car-related services into one app, and implemented web view integration and push notification control."
+      ],
+      "tech": [
+        "Flutter",
+        "Firebase"
+      ]
+    },
+    {
+      "id": "sake-ec",
+      "period": "Mar 2022 – Mar 2023",
+      "org": "Sake e-commerce startup",
+      "position": "Full-Stack Engineer (freelance)",
+      "points": [
+        "Built a new e-commerce site and a review app from scratch, including a lottery sales system for popular items, localization and SEO, and the iOS and Android releases."
+      ],
+      "tech": [
+        "Next.js",
+        "Shopify",
+        "Flutter",
+        "AWS"
+      ]
+    },
+    {
+      "id": "fx-system",
+      "period": "Nov 2021 – Feb 2022",
+      "org": "Financial company in Singapore",
+      "position": "Web Engineer (freelance)",
+      "points": [
+        "Improved an FX trading system, implementing role-based access control and localization."
+      ],
+      "tech": [
+        "Vue",
+        "PHP",
+        "AWS"
+      ]
+    },
+    {
+      "id": "edtech-contract",
+      "period": "Jan 2021 – Oct 2021",
+      "org": "Software development agency",
+      "position": "Frontend Engineer (freelance)",
+      "points": [
+        "Developed web and mobile apps for parents of students at an online tutoring school, building more than ten screens and reviewing team members' code."
+      ],
+      "tech": [
+        "React",
+        "TypeScript",
+        "React Native"
+      ]
+    },
+    {
+      "id": "in-house-se",
+      "period": "Feb 2019 – Dec 2020",
+      "org": "Operating company",
+      "position": "Full-Stack Engineer",
+      "points": [
+        "Built an in-house RPA tool and a web console that runs it remotely, covering everything from requirements to testing, and prototyped an image-processing model."
+      ],
+      "tech": [
+        "C#",
+        "WPF",
+        "React",
+        "Python",
+        "Flask",
+        "AWS",
+        "MySQL"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "area": "AI & agents",
+      "items": [
+        "Agent platform design (procedures, review, memory, evaluation)",
+        "Claude Code",
+        "Codex",
+        "LangGraph",
+        "LangChain",
+        "LangSmith",
+        "Langfuse",
+        "Claude / OpenAI / Gemini APIs",
+        "Speech synthesis and video generation APIs"
+      ]
+    },
+    {
+      "area": "Frontend",
+      "items": [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Remotion",
+        "Tailwind CSS",
+        "Flutter"
+      ]
+    },
+    {
+      "area": "Backend",
+      "items": [
+        "Python (FastAPI)",
+        "Node.js"
+      ]
+    },
+    {
+      "area": "Cloud & infrastructure",
+      "items": [
+        "AWS (Lambda, API Gateway, ECS Fargate, DynamoDB, S3, SQS, CloudFront, Cognito)",
+        "GCP",
+        "Terraform",
+        "Serverless Framework",
+        "GitHub Actions",
+        "Docker"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "0ai Inc.",
+      "url": "https://0ai-inc.com/en/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ig-freetech"
+    }
+  ]
+}

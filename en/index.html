@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" class="site">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Genki Ikeda | Software Engineer</title>
+    <meta name="description" content="Software engineer who runs development — from requirements to implementation, review, and merge — on a self-built autonomous development system. Founder of 0ai Inc.">
+    <link rel="canonical" href="https://ig-freetech.github.io/en/">
+    <link rel="alternate" hreflang="en" href="https://ig-freetech.github.io/en/">
+    <link rel="alternate" hreflang="ja" href="https://ig-freetech.github.io/">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Genki Ikeda | Software Engineer">
+    <meta property="og:description" content="Software engineer who runs development — from requirements to implementation, review, and merge — on a self-built autonomous development system. Founder of 0ai Inc.">
+    <meta property="og:url" content="https://ig-freetech.github.io/en/">
+    <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <nav class="topbar" aria-label="Language"><a class="lang-switch" href="/" hreflang="ja" lang="ja">日本語</a></nav>
+        <p class="name-sub" lang="ja">池田 元気</p>
+        <h1 class="name">Genki Ikeda</h1>
+        <p class="role">Software Engineer / Founder of 0ai Inc.</p>
+        <p class="tagline">I build the system that lets AI agents do the development, and run everything from clarifying requirements to design, implementation, review, and merge on it.</p>
+      </div>
+    </header>
+    <main class="container">
+      <section aria-labelledby="about">
+        <h2 id="about">About</h2>
+        <p>I have worked on full-stack web and cloud development since 2019. Working mostly with startups and nonprofits, I have often built the frontend, backend, and infrastructure of new products on my own.</p>
+        <p>Since 2024 I have focused on building products with generative AI. I led generative AI products as CTO and tech lead at a startup, and since October 2025 I have worked as a contract AI engineer at a SaaS company serving the pharmaceutical industry. In January 2026 I founded 0ai Inc., where I build products in which AI agents carry out business operations on their own.</p>
+        <p>I also hand my own development over to an autonomous development system I built. People focus on goals and judgment calls; agents handle the repetitive work of implementing, verifying, and merging. That is how I work every day.</p>
+      </section>
+      <section aria-labelledby="system">
+        <h2 id="system">Autonomous development system</h2>
+        <p class="lead">A development platform in which agents follow defined procedures from clarifying requirements all the way to merging and cleaning up. The procedures and decision rules are kept independent of the agent runtime, so the same workflow runs on both Claude Code and Codex.</p>
+        <ul class="highlights">
+          <li>
+            <h3>Implementation is delegated</h3>
+            <p>I rarely drive the terminal (TUI) myself to implement anything.</p>
+          </li>
+          <li>
+            <h3>So is upstream communication</h3>
+            <p>The upstream communication that development needs — talking with teammates, confirming specifications — is handled by AI as well. The only part I do myself is attending the actual meetings.</p>
+          </li>
+          <li>
+            <h3>A closed context</h3>
+            <p>Meeting content is handed to the AI too, so work moves forward with every piece of context the job needs already in the AI's hands.</p>
+          </li>
+        </ul>
+        <div class="stats">
+          <div class="stat">
+            <p class="stat-value">~800</p>
+            <p class="stat-label">pull requests merged across my company's repositories, January–September 2026</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">163</p>
+            <p class="stat-label">pull requests merged in September 2026 <span class="nowrap">(27 days)</span> on the platform's own codebase</p>
+          </div>
+        </div>
+        <p class="note">Figures counted from GitHub records as of <span class="nowrap">September 27, 2026</span>.</p>
+        <ol class="steps">
+          <li class="step">
+            <h3>Requirements and design</h3>
+            <p>Goals and acceptance criteria are settled through dialogue. Important decisions are challenged by a separate reviewer agent that has no access to the conversation that produced them.</p>
+          </li>
+          <li class="step">
+            <h3>Implementation</h3>
+            <p>Each piece of work automatically gets its own issue, pull request, and isolated worktree, so several tasks can be implemented in parallel.</p>
+          </li>
+          <li class="step">
+            <h3>Verification</h3>
+            <p>Besides tests, a reviewer agent without the authoring context checks the result against the acceptance criteria. Anything where appearance matters is checked in a real rendering.</p>
+          </li>
+          <li class="step">
+            <h3>Merge and cleanup</h3>
+            <p>Merging, cleaning up branches and worktrees, and updating issues and project status are all automated.</p>
+          </li>
+          <li class="step">
+            <h3>Accumulated knowledge</h3>
+            <p>The reasons and background behind decisions are saved as memories and recalled in later work. Failures feed back into fixing the procedures themselves.</p>
+          </li>
+          <li class="step">
+            <h3>Always-on operation</h3>
+            <p>Resident processes pick up requests from Slack and scheduled tasks, and notify me only when a decision needs a human.</p>
+          </li>
+        </ol>
+        <p class="more"><a href="https://0ai-inc.com/en/mipockle/">About Mipockle, the AI work partner behind this way of working</a></p>
+      </section>
+      <section aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+        <ol class="jobs">
+        <li class="job">
+          <p class="job-period">Jan 2026 – Present</p>
+          <div class="job-body">
+            <h3 class="job-org">0ai Inc.</h3>
+            <p class="job-position">Founder</p>
+            <ul class="job-points"><li>Building Deprex, a platform where AI agents live inside a company's Slack, email, and documents and run business operations 24/7.</li><li>Building other AI agent products, including a meeting agent that joins calls to add context and advice, and a personal AI assistant that carries out everyday tasks.</li><li>Designing, building, and operating the autonomous development system that runs the company's development and operations.</li></ul>
+            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">GitHub</span></p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-period">Oct 2025 – Present</p>
+          <div class="job-body">
+            <h3 class="job-org">SaaS company serving the pharmaceutical industry</h3>
+            <p class="job-position">AI Engineer (contract)</p>
+            <ul class="job-points"><li>Designed and built AI tools that produce materials for pharmaceutical companies — web pages, slides, animated slide videos, and AI avatar videos — including web pages generated from PDFs, slides generated from papers, and script generation.</li><li>Integrated speech synthesis and AI avatar APIs and built the video generation pipeline.</li><li>Rolled out a coding agent (Claude Code) environment to the team and set up the design and evaluation framework for its agents.</li></ul>
+            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Remotion</span><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">Langfuse</span><span class="tag">AWS</span><span class="tag">Terraform</span></p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-period">Mar 2024 – May 2025</p>
+          <div class="job-body">
+            <h3 class="job-org">Startup</h3>
+            <p class="job-position">CTO / Tech Lead (full-time; seconded as a director to a subsidiary)</p>
+            <ul class="job-points"><li>At the subsidiary, built a grief-tech service that lets people talk with the deceased, combining voice cloning, lip sync, and video generated to match the conversation.</li><li>At the parent company, built a tool that analyzes why social videos go viral and a tool that automatically generates YouTube videos. Published about 300 generated videos in the first three weeks, reaching 350,000 total views.</li><li>Set up deployment with Terraform and GitHub Actions in two weeks. A serverless-first architecture cut infrastructure costs to about one fifth of an always-on server setup.</li><li>As product owner, led requirements, the roadmap, and task management for a team of three.</li></ul>
+            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">LangSmith</span><span class="tag">Next.js</span><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Gemini API</span></p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-period">Jul 2023 – Mar 2024</p>
+          <div class="job-body">
+            <h3 class="job-org">Asset management company</h3>
+            <p class="job-position">Web Engineer (freelance)</p>
+            <ul class="job-points"><li>Developed a robo-advisor web app: support for Japan's new NISA tax-free investment program, a large refactoring of the recurring investment settings, and public identity verification with the My Number Card.</li><li>Improved how the team ran Scrum and raised its velocity about 2.5×. Worked in English with international team members.</li></ul>
+            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">React</span><span class="tag">Recoil</span><span class="tag">AWS Amplify</span><span class="tag">Python</span><span class="tag">FastAPI</span></p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-period">Aug 2021 – Aug 2024</p>
+          <div class="job-body">
+            <h3 class="job-org">Education nonprofit</h3>
+            <p class="job-position">Engineer (freelance, sole developer)</p>
+            <ul class="job-points"><li>Built, on my own from requirements to operation, a web system that manages reservations for free tutoring sessions and assigns students to locations.</li><li>Set up a serverless architecture with infrastructure as code, CI/CD, automated integration tests, and Slack alerts on failure, keeping it running with little operational effort.</li></ul>
+            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">AWS Lambda</span><span class="tag">DynamoDB</span><span class="tag">Serverless Framework</span><span class="tag">GitHub Actions</span></p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-period">Apr 2023 – May 2023</p>
+          <div class="job-body">
+            <h3 class="job-org">Automotive services company</h3>
+            <p class="job-position">Mobile App Engineer (freelance)</p>
+            <ul class="job-points"><li>Worked on requirements and specifications for a super app that brings car-related services into one app, and implemented web view integration and push notification control.</li></ul>
+            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">Flutter</span><span class="tag">Firebase</span></p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-period">Mar 2022 – Mar 2023</p>
+          <div class="job-body">
+            <h3 class="job-org">Sake e-commerce startup</h3>
+            <p class="job-position">Full-Stack Engineer (freelance)</p>
+            <ul class="job-points"><li>Built a new e-commerce site and a review app from scratch, including a lottery sales system for popular items, localization and SEO, and the iOS and Android releases.</li></ul>
+            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">Next.js</span><span class="tag">Shopify</span><span class="tag">Flutter</span><span class="tag">AWS</span></p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-period">Nov 2021 – Feb 2022</p>
+          <div class="job-body">
+            <h3 class="job-org">Financial company in Singapore</h3>
+            <p class="job-position">Web Engineer (freelance)</p>
+            <ul class="job-points"><li>Improved an FX trading system, implementing role-based access control and localization.</li></ul>
+            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">Vue</span><span class="tag">PHP</span><span class="tag">AWS</span></p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-period">Jan 2021 – Oct 2021</p>
+          <div class="job-body">
+            <h3 class="job-org">Software development agency</h3>
+            <p class="job-position">Frontend Engineer (freelance)</p>
+            <ul class="job-points"><li>Developed web and mobile apps for parents of students at an online tutoring school, building more than ten screens and reviewing team members' code.</li></ul>
+            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">React Native</span></p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-period">Feb 2019 – Dec 2020</p>
+          <div class="job-body">
+            <h3 class="job-org">Operating company</h3>
+            <p class="job-position">Full-Stack Engineer</p>
+            <ul class="job-points"><li>Built an in-house RPA tool and a web console that runs it remotely, covering everything from requirements to testing, and prototyped an image-processing model.</li></ul>
+            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">C#</span><span class="tag">WPF</span><span class="tag">React</span><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">AWS</span><span class="tag">MySQL</span></p>
+          </div>
+        </li>
+        </ol>
+      </section>
+      <section aria-labelledby="skills">
+        <h2 id="skills">Skills</h2>
+        <div class="skills">
+        <div class="skill-group">
+          <h3>AI &amp; agents</h3>
+          <p><span class="tag">Agent platform design (procedures, review, memory, evaluation)</span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">LangSmith</span><span class="tag">Langfuse</span><span class="tag">Claude / OpenAI / Gemini APIs</span><span class="tag">Speech synthesis and video generation APIs</span></p>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <p><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Remotion</span><span class="tag">Tailwind CSS</span><span class="tag">Flutter</span></p>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <p><span class="tag">Python (FastAPI)</span><span class="tag">Node.js</span></p>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud &amp; infrastructure</h3>
+          <p><span class="tag">AWS (Lambda, API Gateway, ECS Fargate, DynamoDB, S3, SQS, CloudFront, Cognito)</span><span class="tag">GCP</span><span class="tag">Terraform</span><span class="tag">Serverless Framework</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span></p>
+        </div>
+        </div>
+      </section>
+      <section aria-labelledby="links">
+        <h2 id="links">Links</h2>
+        <ul class="links"><li><a href="https://0ai-inc.com/en/">0ai Inc.</a></li><li><a href="https://github.com/ig-freetech">GitHub</a></li></ul>
+      </section>
+    </main>
+    <footer class="container footer">
+      <p>&copy; 2026 Genki Ikeda</p>
+    </footer>
+  </body>
+</html>
