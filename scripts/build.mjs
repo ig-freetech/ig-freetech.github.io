@@ -203,6 +203,7 @@ function page(content, { mode }) {
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <meta name="author" content="Genki Ikeda">
+    <meta name="google-site-verification" content="GbCVneVJDYzVq2bsMPRLI_gwjvgMTDAKjdLR3QIjAEw">
     <meta property="og:type" content="profile">
     <meta property="og:site_name" content="${esc(siteName)}">
     <meta property="og:title" content="${esc(content.meta.title)}">
