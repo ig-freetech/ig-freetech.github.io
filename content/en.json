@@ -26,7 +26,7 @@
   "about": [
     "I have worked on full-stack web and cloud development since 2019. Across startups and nonprofits, I have translated business goals and budgets into requirements, specifications, and architecture, then carried the work through development and operation.",
     "Since 2024 I have focused on building products with generative AI. I led generative AI products as CTO and tech lead at a startup, and founded 0ai Inc. in January 2026 to build and deliver AI-enabled ways of working, including Deprex, which redesigns company operations and organizational structures around AI.",
-    "I also delegate my own development to Mipockle, the autonomous development agent I build. I focus on goals and important decisions while the agent handles requirements, implementation, verification, and coordination with teammates."
+    "I also delegate in-house development and implementation in client environments to Mipockle, the autonomous development agent I build. I focus on goals and important decisions while the agent handles requirements, implementation, verification, and coordination with teammates."
   ],
   "system": {
     "lead": "Mipockle carries context from Slack, development tickets, documents, and meetings through requirements, implementation, verification with real data, and coordination with teammates. I design, build, and operate the system that lets it work continuously using Claude Code and Codex.",
@@ -99,7 +99,8 @@
         "Automated back-office operations with AI, including bookkeeping, labor administration, year-end accounting, and tax filing.",
         "For a sales outsourcing company, designed and implemented an AI research workflow that prioritizes fit with the offering and the contact’s responsibilities, current information, and supporting evidence. Developing sales lists for informed prospecting and validating the workflow on sample cases.",
         "Starting with individual workflows, the goal is an organization where AI also supports the planning and progress management of human work. I work alongside customers from discovery through implementation, operation, and redesign, reducing routine instructions and checks concentrated on executives and opening up different choices about staffing, outsourcing, hiring, and growth strategy.",
-        "Building AI products, including meeting agents and personal assistants, that carry context from users’ work and everyday lives into action.",
+        "Designed and developed Envoy, an AI meeting assistant that joins Google Meet through voice or an avatar, with real-time transcription, discussion analysis, contextual information, and spoken responses. It connects company knowledge and task-executing agents to turn meeting requests into research and action, continuing work after the meeting ends.",
+        "Building personal AI assistants that carry context from users’ work and everyday lives into action.",
         "Designed, built, and operate the autonomous development system behind the company’s own work, connecting requirements, implementation, verification, and ongoing improvement."
       ],
       "tech": [
