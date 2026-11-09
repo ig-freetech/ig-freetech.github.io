@@ -1,3 +1,4 @@
 private/
 out/
 .DS_Store
+.playwright-cli/

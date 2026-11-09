@@ -22,22 +22,28 @@
     <header class="hero">
       <div class="container">
         <nav class="topbar" aria-label="Language"><a class="lang-switch" href="/en/" hreflang="en" lang="en">English</a></nav>
+        <div class="hero-profile">
+        <div class="hero-copy">
         <p class="name-sub" lang="en">Genki Ikeda</p>
         <h1 class="name">池田 元気</h1>
         <p class="role">ソフトウェアエンジニア ／ 株式会社0ai 代表</p>
+        <ul class="links"><li><a href="https://0ai-inc.com/"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/></svg><span>株式会社0ai 公式サイト</span></a></li><li><a href="https://github.com/ig-freetech"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></svg><span>GitHub</span></a></li></ul>
         <p class="tagline"><span class="nowrap">AI エージェント</span>に開発を任せる仕組みごと作り、要件の整理から設計・実装・レビュー・統合までを回しています。</p>
+        </div>
+        <img class="hero-portrait" src="/assets/genki-ikeda.webp" alt="池田 元気" width="720" height="960" fetchpriority="high" decoding="async">
+        </div>
       </div>
     </header>
     <main class="container">
       <section aria-labelledby="about">
         <h2 id="about">概要</h2>
-        <p>2019年から <span class="nowrap">Web と</span>クラウドのフルスタック開発に携わっています。スタートアップや <span class="nowrap">NPO などで</span>、フロントエンド・バックエンド・インフラの立ち上げを一人で担う仕事を多く経験してきました。</p>
-        <p>2024年からは生成 <span class="nowrap">AI を</span>使ったサービス開発に軸足を移しました。スタートアップで CTO・テックリードとして生成 <span class="nowrap">AI サービス</span>を立ち上げ、<span class="nowrap">2025年10月</span>からは製薬業界向け SaaS 企業で <span class="nowrap">AI エンジニア</span>（業務委託）を務めています。<span class="nowrap">2026年1月</span>に株式会社<span class="nowrap">0ai を</span>設立し、<span class="nowrap">AI エージェント</span>が業務を自律実行するプロダクトを開発しています。</p>
-        <p>自分の開発も、自作の自律開発システムに任せています。人は目的と判断に集中し、実装・検証・統合といった反復作業はエージェントが回す、という働き方を日々の開発で実践しています。</p>
+        <p>2019年から <span class="nowrap">Web と</span>クラウドのフルスタック開発に携わっています。スタートアップや <span class="nowrap">NPO などで</span>、事業の目的や予算から要件・仕様・技術構成を具体化し、開発と運用まで一貫して担ってきました。</p>
+        <p>2024年からは生成 <span class="nowrap">AI を</span>使ったサービス開発に軸足を移しました。スタートアップで CTO・テックリードとして生成 <span class="nowrap">AI サービス</span>を立ち上げ、<span class="nowrap">2026年1月</span>に株式会社<span class="nowrap">0ai を</span>設立。企業の業務・組織を AI 中心に再設計する「Deprex」など、<span class="nowrap">AI を</span>前提に仕事が回る仕組みを開発・提供しています。</p>
+        <p>自分の開発も、自社開発の自律開発エージェント「Mipockle」に任せています。人は目的や重要な判断に集中し、要件の確認から実装・検証・関係者との調整までをエージェントが進める働き方を実践しています。</p>
       </section>
       <section aria-labelledby="system">
-        <h2 id="system">自律開発システム</h2>
-        <p class="lead">要件の整理から統合・後片付けまでを、エージェントが所定の手順で進める開発基盤です。Claude <span class="nowrap">Code と</span> <span class="nowrap">Codex のどちらでも</span>同じ手順で動くように、手順と判断基準をランタイムから切り離して設計しています。</p>
+        <h2 id="system">自律開発エージェント Mipockle</h2>
+        <p class="lead">Slack・開発チケット・資料・会議の内容を引き継ぎ、要件の確認から実装、実データでの検証、関係者との調整まで担う自律開発エージェントです。Claude Code・<span class="nowrap">Codex を</span>実行基盤に、継続的に仕事を進める仕組みを自ら設計・開発・運用しています。</p>
         <ul class="highlights">
           <li>
             <h3>実装は任せる</h3>
@@ -48,48 +54,48 @@
             <p>チームメンバーとのやり取りや仕様の確認など、開発に必要な上流工程のコミュニケーションも、実際の会議への参加を除いて <span class="nowrap">AI が</span>担います。</p>
           </li>
           <li>
-            <h3>文脈を閉じる</h3>
-            <p>会議の内容も <span class="nowrap">AI に</span>渡すことで、仕事に必要な文脈がすべて <span class="nowrap">AI の</span>手元にそろった、閉じた状態で開発が進みます。</p>
+            <h3>会議から次の仕事へつなぐ</h3>
+            <p>会議の内容も <span class="nowrap">AI に</span>渡し、合意事項や判断の背景を引き継ぎます。担当する仕事と依存関係を整理して、確認・実装・引き渡しを進めます。</p>
           </li>
         </ul>
         <div class="stats">
           <div class="stat">
-            <p class="stat-value">約800件</p>
-            <p class="stat-label"><span class="nowrap">2026年1〜9月</span>に自社リポジトリで統合した PR</p>
+            <p class="stat-value">3,064件</p>
+            <p class="stat-label"><span class="nowrap">2026年9月</span>〜11月9日に自社リポジトリで統合した PR</p>
           </div>
           <div class="stat">
-            <p class="stat-value">163件</p>
-            <p class="stat-label"><span class="nowrap">2026年9月</span>（<span class="nowrap">27日間</span>）に開発基盤そのものの開発で統合した PR</p>
+            <p class="stat-value">1,326件</p>
+            <p class="stat-label">うち、開発基盤そのもののリポジトリで統合した PR（同期間）</p>
           </div>
         </div>
-        <p class="note">数字は <span class="nowrap">GitHub の</span>記録から集計（<span class="nowrap">2026年9月27日</span>時点）。</p>
+        <p class="note"><span class="nowrap">2026年11月9日</span> 6:25（日本時間）時点の GitHub 記録から集計。機能開発・改善に加え、記憶や設定の更新を含みます。</p>
         <ol class="steps">
           <li class="step">
-            <h3>要件の整理と設計</h3>
-            <p>対話で目的と受け入れ条件を固め、重要な判断は、その判断を生んだ会話から切り離した検査役のエージェントが反証前提で点検します。</p>
+            <h3>仕事の把握と要件の確認</h3>
+            <p>Slack・チケット・資料・会議の内容を照合し、自分が担当する仕事と合意事項、未解決の論点を整理。目的と期待する成果から変更範囲を具体化します。</p>
           </li>
           <li class="step">
-            <h3>実装</h3>
-            <p>作業ごとに Issue・PR・専用の作業ツリーを自動で用意し、複数の作業を並行して実装します。</p>
+            <h3>設計と実装</h3>
+            <p>既存コードと仕様を調べ、変更ごとに Issue・PR・専用の作業環境を用意。依存関係を踏まえて実装し、重要な設計判断は独立した検査役が点検します。</p>
           </li>
           <li class="step">
-            <h3>検証</h3>
-            <p>テストに加えて、生成した文脈を持たないレビュー役のエージェントが受け入れ条件への適合を点検します。見た目が重要な成果物は実際の表示で確認します。</p>
+            <h3>実データと実物での検証</h3>
+            <p>テストに加え、欠けた入力や中断後の再実行、実際の表示・出力を確認。作成時の会話を持たないレビュー役が、期待する成果への適合を点検します。</p>
           </li>
           <li class="step">
-            <h3>統合と後片付け</h3>
-            <p>マージ、ブランチと作業環境の清掃、<span class="nowrap">Issue と</span> <span class="nowrap">Project の</span>状態更新まで自動で行います。</p>
+            <h3>関係者との調整とレビュー対応</h3>
+            <p>任された範囲で <span class="nowrap">Slack による</span>仕様確認、進捗共有、成果物の案内、指摘への返答まで担当。フィードバックを受けて修正・再検証を続けます。</p>
           </li>
           <li class="step">
-            <h3>知識の蓄積</h3>
-            <p>判断の理由や背景を記憶として保存し、次の作業で思い出して使います。失敗から手順そのものを直す仕組みもあります。</p>
+            <h3>継続実行と引き渡し</h3>
+            <p>常駐処理が依頼や返信を確認し、依存先の完了や回答を受けて作業を再開。自社開発では統合・後片付けまで行い、参加先ではチームの承認・反映手順に従います。</p>
           </li>
           <li class="step">
-            <h3>常駐運用</h3>
-            <p>常駐プロセスが <span class="nowrap">Slack からの</span>依頼や定期タスクを受け付け、人の確認が必要な判断だけを通知します。</p>
+            <h3>記憶と継続改善</h3>
+            <p>合意、判断理由、未解決事項を記憶へ残し、次の仕事へ引き継ぎます。実行結果や指摘を基に手順を改善し、その後の実行で成果を確かめます。</p>
           </li>
         </ol>
-        <p class="more"><a href="https://0ai-inc.com/mipockle/">この働き方を支える <span class="nowrap">AI ワークパートナー</span>「Mipockle」について</a></p>
+        <p class="more"><a href="https://0ai-inc.com/mipockle/">自律開発エージェント <span class="nowrap">Mipockle の</span>紹介</a></p>
       </section>
       <section aria-labelledby="experience">
         <h2 id="experience">経歴</h2>
@@ -99,17 +105,45 @@
           <div class="job-body">
             <h3 class="job-org">株式会社0ai</h3>
             <p class="job-position">代表</p>
-            <ul class="job-points"><li><span class="nowrap">AI エージェント</span>が Slack・メール・ドキュメントに常駐し、業務を24時間自律実行するプラットフォーム「Deprex」を開発。</li><li>会議に参加して補足や助言を行う会議エージェント、生活のタスクを代わりに実行するパーソナル <span class="nowrap">AI アシスタント</span>など、<span class="nowrap">AI エージェント</span>のプロダクトを開発。</li><li>自社の開発と業務を回す自律開発システムを設計・開発・運用。</li></ul>
-            <p class="job-tech"><span class="visually-hidden">技術: </span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">GitHub</span></p>
+            <ul class="job-points"><li>企業の業務・組織を AI 中心に再設計し、AI ネイティブ企業への転換を支援する「Deprex」を開発・提供。顧客の事業目的・判断基準・予算を踏まえ、人と <span class="nowrap">AI の</span>役割、部門をまたぐ業務プロセス、実行環境を設計・実装・継続改善します。</li><li>クリニック向けマーケティング支援では、制作・承認・公開・関係者との調整を一連の業務として捉え、必要な人の判断を残した自律運用を設計。<span class="nowrap">Instagram の</span>継続運用を実装し、<span class="nowrap">YouTube の</span>進行管理にも段階的に展開しています。</li><li>Meta 広告データの分析から企画、広告クリエイティブ制作までを一気通貫で自動化。動画編集も自動化し、分析結果を制作へつなぐ仕組みを構築しています。</li><li>会計帳簿の記帳、労務管理、決算申告など、会社運営のバックオフィス業務を <span class="nowrap">AI で</span>自動化。</li><li>営業代行会社向けに、商材と担当業務の適合、情報の現在性、根拠を重視した営業調査の AI ワークフローを設計・実装。営業担当者が判断に使えるリストの作成と、サンプルでの検証を進めています。</li><li>個別業務の代替を入口に、人が担う仕事の段取り・進捗管理も <span class="nowrap">AI が</span>支える組織を目指しています。経営者に集中する指示・確認を減らし、採用・外注・人員配置や事業拡大の戦略を見直せる体制へ、現場での業務発掘から実装・運用・再設計まで伴走します。</li><li>会議エージェントやパーソナル <span class="nowrap">AI アシスタント</span>など、利用者の仕事や生活の文脈を引き継いで行動する AI プロダクトを開発。</li><li>自社の開発と業務を回す自律開発システムを設計・開発・運用し、要件整理・実装・検証・改善を継続的に行う基盤を整備。</li></ul>
+            <div class="job-tech" aria-label="技術">
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">言語・開発基盤</h4>
+                <p><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">Pi</span><span class="tag">MCP</span><span class="tag">GitHub</span><span class="tag">GitHub Actions</span><span class="tag">uv</span><span class="tag">pytest</span><span class="tag">Vitest</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">LLM・画像生成</h4>
+                <p><span class="tag">Claude API</span><span class="tag">OpenAI API</span><span class="tag">Gemini API</span><span class="tag">GLM</span><span class="tag">Kimi</span><span class="tag">Jev</span><span class="tag">Groq</span><span class="tag">GPT Image</span><span class="tag">Grok</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">音声・会議エージェント</h4>
+                <p><span class="tag">Vexa</span><span class="tag">Recall.ai</span><span class="tag">ElevenLabs</span><span class="tag">Scribe</span><span class="tag">Whisper</span><span class="tag">Fish Audio</span><span class="tag">Qwen3-TTS</span><span class="tag">Pipecat</span><span class="tag">WebRTC</span><span class="tag">WebSocket</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">画像・動画処理と推論</h4>
+                <p><span class="tag">Seedance</span><span class="tag">Remotion</span><span class="tag">FFmpeg</span><span class="tag">PyAV</span><span class="tag">OpenCV</span><span class="tag">Pillow</span><span class="tag">NumPy</span><span class="tag">RapidOCR</span><span class="tag">ONNX Runtime</span><span class="tag">MLX</span><span class="tag">PyTorch</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">Web・サーバー</h4>
+                <p><span class="tag">React</span><span class="tag">Astro</span><span class="tag">Vite</span><span class="tag">Tailwind CSS</span><span class="tag">Three.js</span><span class="tag">i18next</span><span class="tag">FastAPI</span><span class="tag">aiohttp</span><span class="tag">Starlette</span><span class="tag">Uvicorn</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">クラウド・データ・認証</h4>
+                <p><span class="tag">Google Cloud Run</span><span class="tag">Google Cloud Storage</span><span class="tag">Firebase Authentication</span><span class="tag">Firestore</span><span class="tag">Cloudflare Workers</span><span class="tag">Cloudflare Pages</span><span class="tag">Cloudflare Access</span><span class="tag">Cloudflare Durable Objects</span><span class="tag">Cloudflare KV</span><span class="tag">SQLite</span><span class="tag">Terraform</span><span class="tag">Docker</span><span class="tag">OAuth 2.0</span><span class="tag">Bitwarden Secrets Manager</span><span class="tag">Auth0</span><span class="tag">Bitwarden</span><span class="tag">GCP</span><span class="tag">Firebase</span><span class="tag">Cloudflare</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">業務連携・ブラウザ操作</h4>
+                <p><span class="tag">Slack API</span><span class="tag">Google Workspace API</span><span class="tag">Meta Marketing API</span><span class="tag">Instagram Graph API</span><span class="tag">YouTube Data API</span><span class="tag">Canva MCP</span><span class="tag">Jina Reader</span><span class="tag">Playwright</span><span class="tag">agent-browser</span><span class="tag">freee</span><span class="tag">Google Analytics</span><span class="tag">Microsoft Clarity</span><span class="tag">Canva</span><span class="tag">Twilio</span></p>
+              </div></div>
           </div>
         </li>
         <li class="job">
-          <p class="job-period">2025年10月〜現在</p>
+          <p class="job-period">2025年10月〜2026年12月（終了予定）</p>
           <div class="job-body">
             <h3 class="job-org">製薬業界向け SaaS 企業</h3>
             <p class="job-position"><span class="nowrap">AI エンジニア</span>（業務委託）</p>
-            <ul class="job-points"><li>製薬企業向けの資材（Web ページ、スライド、スライドアニメーション動画、<span class="nowrap">AI アバター</span>動画）を <span class="nowrap">AI で</span>制作するツール群を設計・実装。<span class="nowrap">PDF からの</span> Web ページ生成、論文からのスライド生成、台本生成などを担当。</li><li>音声合成・<span class="nowrap">AI アバター</span>の API 連携と、動画生成の仕組みを構築。</li><li>コーディングエージェント（Claude Code）の開発環境をチームへ展開し、エージェントの設計と評価の仕組みを整備。</li></ul>
-            <p class="job-tech"><span class="visually-hidden">技術: </span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Remotion</span><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">Langfuse</span><span class="tag">AWS</span><span class="tag">Terraform</span></p>
+            <ul class="job-points"><li>製薬企業向けの資材制作を対象に、Web・スライド・動画の制作から顧客デリバリーまで、チーム全体で運用できる <span class="nowrap">AI エージェント</span>システムを設計・実装。</li><li>AI 技術の調査・プロトタイプ検証、システムと <span class="nowrap">API の</span>利用コストの算出を担当し、制作要件・出力品質・実行コストを踏まえた構成を検討。</li><li>製薬コンプライアンスを遵守した再帰的修正の仕組みを実装。Claude Code ベースで、エージェントの設計・実装に加え、評価と再帰的改善までをつなぐ仕組みを整備。</li></ul>
+            <div class="job-tech" aria-label="技術"><p><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Remotion</span><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">Langfuse</span><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">HeyGen</span><span class="tag">ElevenLabs</span><span class="tag">Seedance</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -117,8 +151,8 @@
           <div class="job-body">
             <h3 class="job-org">スタートアップ</h3>
             <p class="job-position">CTO ／ テックリード（正社員。子会社へ役員として出向）</p>
-            <ul class="job-points"><li>子会社で、故人との対話を実現するグリーフテックサービスを開発。音声のクローン、リップシンク、会話に応じた映像生成を組み合わせた。</li><li>本体では、SNS 動画のヒット要因を分析するツールと、YouTube 動画の自動生成ツールを開発。自動生成した動画を初月の<span class="nowrap">3週間</span>で<span class="nowrap">約300本</span>投稿し、総再生回数<span class="nowrap">35万回</span>を達成。</li><li><span class="nowrap">Terraform と</span> GitHub <span class="nowrap">Actions による</span>デプロイ体制を<span class="nowrap">2週間</span>で構築。サーバーレス中心の構成で、常時稼働サーバー構成と比べてインフラ費を<span class="nowrap">約5分の1</span>に抑えた。</li><li>プロダクトオーナーとして要件定義・ロードマップ・タスク管理を主導（3人体制）。</li></ul>
-            <p class="job-tech"><span class="visually-hidden">技術: </span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">LangSmith</span><span class="tag">Next.js</span><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Gemini API</span></p>
+            <ul class="job-points"><li>CTO・テックリードとして、生成 <span class="nowrap">AI を</span>用いた動画分析・自動制作サービスと、子会社のグリーフテックサービスの立ち上げを担当。初期は Web・API・インフラを一人で構築し、その後は3人体制のプロダクトオーナーとして開発を主導。</li><li>事業側の役員・現場メンバーと要件、課題、スケジュールを調整し、ロードマップと優先順位を具体化。実際の使用感を開発計画へ反映し、要件定義・仕様確認・コードレビュー・チームのタスク管理を担当。</li><li><span class="nowrap">PoC の</span>予算と処理特性を基に、サーバーレスを基本とし、長時間・高負荷の処理だけを都度実行する構成を選定。<span class="nowrap">Terraform と</span> GitHub <span class="nowrap">Actions による</span>デプロイ体制を<span class="nowrap">2週間</span>で整備し、常時稼働構成と比べインフラ費を<span class="nowrap">約5分の1</span>に抑制。</li><li>プロンプト管理と出力検証を、非エンジニアも調整に参加できる形で整備。<span class="nowrap">YouTube の</span>自動制作・運用では、初月の<span class="nowrap">3週間</span>で<span class="nowrap">約300本</span>を投稿し、総再生回数<span class="nowrap">35万回</span>を達成。</li></ul>
+            <div class="job-tech" aria-label="技術"><p><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">LangSmith</span><span class="tag">Next.js</span><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Gemini API</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -126,8 +160,8 @@
           <div class="job-body">
             <h3 class="job-org">資産運用会社</h3>
             <p class="job-position">Web エンジニア（フリーランス）</p>
-            <ul class="job-points"><li>ロボアドバイザーの Web アプリを開発。<span class="nowrap">新 NISA</span> への対応、積立設定機能の大規模なリファクタリング、マイナンバーカードによる公的個人認証を実装。</li><li>スクラムの運営改善に取り組み、チームのベロシティを<span class="nowrap">約2.5倍</span>に改善。外国籍メンバーとは英語でやり取り。</li></ul>
-            <p class="job-tech"><span class="visually-hidden">技術: </span><span class="tag">React</span><span class="tag">Recoil</span><span class="tag">AWS Amplify</span><span class="tag">Python</span><span class="tag">FastAPI</span></p>
+            <ul class="job-points"><li>資産運用のロボアドバイザー開発に参画。制度変更を踏まえたサービス改修を担当し、既存の業務ロジックと画面仕様の整合を取りながら開発を推進。</li><li>複雑化した画面設計を見直し、業務ロジックと <span class="nowrap">UI を</span>分離するリファクタリングを担当。継続的な変更に対応しやすい構成へ改善。</li><li>開発組織の課題に対するプロセス改善に取り組み、チームのベロシティとスループットを<span class="nowrap">約2.5倍</span>に改善。スクラムマスターを持ち回りで担当し、外国籍メンバーとは英語で連携。</li></ul>
+            <div class="job-tech" aria-label="技術"><p><span class="tag">React</span><span class="tag">Recoil</span><span class="tag">AWS Amplify</span><span class="tag">Python</span><span class="tag">FastAPI</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -135,8 +169,8 @@
           <div class="job-body">
             <h3 class="job-org">教育系 NPO</h3>
             <p class="job-position">エンジニア（フリーランス、唯一の開発者）</p>
-            <ul class="job-points"><li>無料塾の参加予約と拠点への振り分けを管理する Web システムを、要件定義から運用まで一人で構築。</li><li>サーバーレス構成と IaC、CI/CD、結合テストの自動化と失敗時の Slack 通知まで整備し、少ない運用負荷で継続運用。</li></ul>
-            <p class="job-tech"><span class="visually-hidden">技術: </span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">AWS Lambda</span><span class="tag">DynamoDB</span><span class="tag">Serverless Framework</span><span class="tag">GitHub Actions</span></p>
+            <ul class="job-points"><li>教育事業の予約・運営管理システムを、唯一のエンジニアとして新規開発。要件定義、アーキテクチャ設計、実装、結合テスト、運用までを一貫して担当。</li><li>利用者と運営担当者の使い方、アクセス量、費用を考慮して、サーバーレス構成とデータ設計を選定。運営の規模に合った低負荷な構成を組み立て、稼働環境の移管とデータ基盤の見直しにも対応。</li><li>開発・本番環境を <span class="nowrap">IaC で</span>管理し、CI/CD、API 仕様の一元管理、重要な業務の自動テストと障害通知を整備。一人でも継続して変更・運用できる開発基盤を構築。</li></ul>
+            <div class="job-tech" aria-label="技術"><p><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">AWS Lambda</span><span class="tag">DynamoDB</span><span class="tag">Serverless Framework</span><span class="tag">GitHub Actions</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -144,8 +178,8 @@
           <div class="job-body">
             <h3 class="job-org">自動車関連サービスの企業</h3>
             <p class="job-position">モバイルアプリエンジニア（フリーランス）</p>
-            <ul class="job-points"><li>車に関する手続きを一つのアプリで完結させるスーパーアプリの開発で、要件定義と仕様策定を担当。Web ビューとの連携やプッシュ通知の制御を実装。</li></ul>
-            <p class="job-tech"><span class="visually-hidden">技術: </span><span class="tag">Flutter</span><span class="tag">Firebase</span></p>
+            <ul class="job-points"><li>自動車関連サービスを統合するモバイルアプリの開発で、要件定義・仕様策定から実装までを担当。参画後は仕様を詰める役割も任され、上流工程から開発を支援。</li><li>決裁権を持つ関係者と密に連携し、既存サービスのリニューアル方針と必要な要件を整理。<span class="nowrap">UX の</span>観点から画面横断の仕様へまとめ、各メンバーが実装に着手できる粒度まで具体化。</li></ul>
+            <div class="job-tech" aria-label="技術"><p><span class="tag">Flutter</span><span class="tag">Firebase</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -153,8 +187,8 @@
           <div class="job-body">
             <h3 class="job-org">日本酒の EC スタートアップ</h3>
             <p class="job-position">フルスタックエンジニア（フリーランス）</p>
-            <ul class="job-points"><li>EC サイトとレビューアプリを新規開発。人気商品の抽選販売の仕組み、多言語化と SEO、iOS・Android アプリのリリースを担当。</li></ul>
-            <p class="job-tech"><span class="visually-hidden">技術: </span><span class="tag">Next.js</span><span class="tag">Shopify</span><span class="tag">Flutter</span><span class="tag">AWS</span></p>
+            <ul class="job-points"><li>EC サイトとモバイルアプリの新規開発に、要件定義・UI/UX 設計からテスト・リリースまで横断して参画。決裁者と直接やり取りし、事業側の要望を具体的な仕様へ整理。</li><li>アクセス集中への対応や、多言語・<span class="nowrap">SEO を</span>含むサービス全体の利用体験を設計・実装。<span class="nowrap">Web と</span> iOS・<span class="nowrap">Android の</span>開発・リリースを担当。</li><li>Google <span class="nowrap">Analytics の</span>端末データと Microsoft <span class="nowrap">Clarity の</span>利用状況を基に、対象環境や UX 上の課題を整理し、画面設計と機能改善の判断に活用。</li><li>リーダー不在時は仕様決定とメンバーのスケジュール管理も担当。情報共有や振り返りの機会を提案し、チーム間の連携と開発の進め方の改善に関与。</li></ul>
+            <div class="job-tech" aria-label="技術"><p><span class="tag">Next.js</span><span class="tag">Shopify</span><span class="tag">Flutter</span><span class="tag">AWS</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -162,8 +196,8 @@
           <div class="job-body">
             <h3 class="job-org">シンガポールの金融系企業</h3>
             <p class="job-position">Web エンジニア（フリーランス）</p>
-            <ul class="job-points"><li>FX 取引システムの改修。権限制御と多言語化を担当。</li></ul>
-            <p class="job-tech"><span class="visually-hidden">技術: </span><span class="tag">Vue</span><span class="tag">PHP</span><span class="tag">AWS</span></p>
+            <ul class="job-points"><li>シンガポールの金融取引サービスに、既存システムの改修担当として参画。リファクタリングと不具合修正を中心に、保守・改善を担当。</li><li>大規模な多言語対応をほぼ一人で進行し、利用者・運用者の役割に応じたアクセス管理も整備。</li></ul>
+            <div class="job-tech" aria-label="技術"><p><span class="tag">Vue</span><span class="tag">PHP</span><span class="tag">AWS</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -171,17 +205,17 @@
           <div class="job-body">
             <h3 class="job-org">受託開発企業</h3>
             <p class="job-position">フロントエンドエンジニア（フリーランス）</p>
-            <ul class="job-points"><li>オンライン学習塾の保護者向け Web・モバイルアプリを開発。十数画面の実装と、メンバーのコードレビューを担当。</li></ul>
-            <p class="job-tech"><span class="visually-hidden">技術: </span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">React Native</span></p>
+            <ul class="job-points"><li>オンライン学習塾の保護者向け Web・モバイルアプリの立ち上げ期に参画し、フロントエンド開発を担当。</li><li>仕様の考慮漏れを洗い出し、実装前の仕様具体化に関与。メンバーへの仕様・実装上の助言、コードレビュー、タスク管理も担い、開発の進行と品質を支援。</li></ul>
+            <div class="job-tech" aria-label="技術"><p><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">React Native</span></p></div>
           </div>
         </li>
         <li class="job">
           <p class="job-period">2019年2月〜2020年12月</p>
           <div class="job-body">
-            <h3 class="job-org">事業会社</h3>
+            <h3 class="job-org">IT自社サービス企業</h3>
             <p class="job-position">フルスタックエンジニア</p>
-            <ul class="job-points"><li>RPA ツールと、それを遠隔実行する管理 Web コンソールを自社開発。要件定義からテストまでを担当し、画像処理モデルの試作も行った。</li></ul>
-            <p class="job-tech"><span class="visually-hidden">技術: </span><span class="tag">C#</span><span class="tag">WPF</span><span class="tag">React</span><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">AWS</span><span class="tag">MySQL</span></p>
+            <ul class="job-points"><li>自社サービスの RPA 製品と管理 Web システムの新規開発で、要件定義・UI/UX 設計からフロントエンド、バックエンド、インフラ、テストまで横断して担当。</li><li>チームの予算とユースケースを基に、言語ごとの特性・性能を比較し、技術選定とアーキテクチャ設計を担当。</li><li>権限設計、通信方式、<span class="nowrap">AWS の</span>ネットワーク・データ構成を整理し、デスクトップ製品とクラウドをつなぐサービス基盤を構築。画像処理 <span class="nowrap">AI の</span>プロトタイプ検証にも対応。</li></ul>
+            <div class="job-tech" aria-label="技術"><p><span class="tag">C#</span><span class="tag">WPF</span><span class="tag">React</span><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">AWS</span><span class="tag">MySQL</span></p></div>
           </div>
         </li>
         </ol>
@@ -191,25 +225,21 @@
         <div class="skills">
         <div class="skill-group">
           <h3>AI・エージェント</h3>
-          <p><span class="tag">エージェント基盤の設計（手順・レビュー・記憶・評価）</span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">LangSmith</span><span class="tag">Langfuse</span><span class="tag">Claude / OpenAI / Gemini API</span><span class="tag">音声合成・動画生成 API</span></p>
+          <p><span class="tag">エージェント基盤の設計（手順・レビュー・記憶・評価）</span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">LangSmith</span><span class="tag">Langfuse</span><span class="tag">Claude / OpenAI / Gemini API</span><span class="tag">音声合成・動画生成 API</span><span class="tag">Pi</span><span class="tag">GLM</span><span class="tag">Kimi</span><span class="tag">Jev</span><span class="tag">Groq</span><span class="tag">MCP</span><span class="tag">Vexa</span><span class="tag">Recall.ai</span><span class="tag">ElevenLabs</span><span class="tag">Whisper</span><span class="tag">Fish Audio</span><span class="tag">Seedance</span><span class="tag">GPT Image</span><span class="tag">Grok</span></p>
         </div>
         <div class="skill-group">
           <h3>フロントエンド</h3>
-          <p><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Remotion</span><span class="tag">Tailwind CSS</span><span class="tag">Flutter</span></p>
+          <p><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Remotion</span><span class="tag">Tailwind CSS</span><span class="tag">Flutter</span><span class="tag">Astro</span><span class="tag">Vite</span><span class="tag">Three.js</span><span class="tag">Google Analytics</span><span class="tag">Microsoft Clarity</span></p>
         </div>
         <div class="skill-group">
           <h3>バックエンド</h3>
-          <p><span class="tag">Python (FastAPI)</span><span class="tag">Node.js</span></p>
+          <p><span class="tag">Python (FastAPI)</span><span class="tag">Node.js</span><span class="tag">aiohttp</span><span class="tag">Starlette</span><span class="tag">WebSocket</span><span class="tag">SQLite</span></p>
         </div>
         <div class="skill-group">
           <h3>クラウド・インフラ</h3>
-          <p><span class="tag">AWS（Lambda, API Gateway, ECS Fargate, DynamoDB, S3, SQS, CloudFront, Cognito）</span><span class="tag">GCP</span><span class="tag">Terraform</span><span class="tag">Serverless Framework</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span></p>
+          <p><span class="tag">AWS（Lambda, API Gateway, ECS Fargate, DynamoDB, S3, SQS, CloudFront, Cognito）</span><span class="tag">GCP</span><span class="tag">Terraform</span><span class="tag">Serverless Framework</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span><span class="tag">Cloudflare Workers / Pages / Access</span><span class="tag">Firebase / Firestore</span><span class="tag">Google Cloud Run / Cloud Storage</span><span class="tag">Bitwarden Secrets Manager</span><span class="tag">Auth0</span><span class="tag">Bitwarden</span><span class="tag">Firebase</span><span class="tag">Cloudflare</span><span class="tag">Canva</span><span class="tag">Twilio</span></p>
         </div>
         </div>
-      </section>
-      <section aria-labelledby="links">
-        <h2 id="links">リンク</h2>
-        <ul class="links"><li><a href="https://0ai-inc.com">株式会社0ai</a></li><li><a href="https://github.com/ig-freetech">GitHub</a></li></ul>
       </section>
     </main>
     <footer class="container footer">

@@ -12,7 +12,7 @@
   },
   "labels": {
     "about": "About",
-    "system": "Autonomous development system",
+    "system": "Mipockle — autonomous development agent",
     "experience": "Experience",
     "skills": "Skills",
     "links": "Links",
@@ -24,49 +24,49 @@
   "role": "Software Engineer / Founder of 0ai Inc.",
   "tagline": "I build the system that lets AI agents do the development, and run everything from clarifying requirements to design, implementation, review, and merge on it.",
   "about": [
-    "I have worked on full-stack web and cloud development since 2019. Working mostly with startups and nonprofits, I have often built the frontend, backend, and infrastructure of new products on my own.",
-    "Since 2024 I have focused on building products with generative AI. I led generative AI products as CTO and tech lead at a startup, and since October 2025 I have worked as a contract AI engineer at a SaaS company serving the pharmaceutical industry. In January 2026 I founded 0ai Inc., where I build products in which AI agents carry out business operations on their own.",
-    "I also hand my own development over to an autonomous development system I built. People focus on goals and judgment calls; agents handle the repetitive work of implementing, verifying, and merging. That is how I work every day."
+    "I have worked on full-stack web and cloud development since 2019. Across startups and nonprofits, I have translated business goals and budgets into requirements, specifications, and architecture, then carried the work through development and operation.",
+    "Since 2024 I have focused on building products with generative AI. I led generative AI products as CTO and tech lead at a startup, and founded 0ai Inc. in January 2026 to build and deliver AI-enabled ways of working, including Deprex, which redesigns company operations and organizational structures around AI.",
+    "I also delegate my own development to Mipockle, the autonomous development agent I build. I focus on goals and important decisions while the agent handles requirements, implementation, verification, and coordination with teammates."
   ],
   "system": {
-    "lead": "A development platform in which agents follow defined procedures from clarifying requirements all the way to merging and cleaning up. The procedures and decision rules are kept independent of the agent runtime, so the same workflow runs on both Claude Code and Codex.",
+    "lead": "Mipockle carries context from Slack, development tickets, documents, and meetings through requirements, implementation, verification with real data, and coordination with teammates. I design, build, and operate the system that lets it work continuously using Claude Code and Codex.",
     "steps": [
       {
-        "title": "Requirements and design",
-        "body": "Goals and acceptance criteria are settled through dialogue. Important decisions are challenged by a separate reviewer agent that has no access to the conversation that produced them."
+        "title": "Understand the work and requirements",
+        "body": "Cross-check Slack, tickets, documents, and meetings to identify my responsibilities, agreements, and open questions, then define the change from the goal and expected outcome."
       },
       {
-        "title": "Implementation",
-        "body": "Each piece of work automatically gets its own issue, pull request, and isolated worktree, so several tasks can be implemented in parallel."
+        "title": "Design and implementation",
+        "body": "Study existing code and specifications, create an issue, pull request, and isolated workspace for each change, and implement with dependencies in mind. An independent reviewer checks important design decisions."
       },
       {
-        "title": "Verification",
-        "body": "Besides tests, a reviewer agent without the authoring context checks the result against the acceptance criteria. Anything where appearance matters is checked in a real rendering."
+        "title": "Verify real data and outputs",
+        "body": "Beyond tests, check incomplete input, resuming interrupted work, and actual rendering and output. A reviewer without the authoring conversation checks the result against the expected outcome."
       },
       {
-        "title": "Merge and cleanup",
-        "body": "Merging, cleaning up branches and worktrees, and updating issues and project status are all automated."
+        "title": "Coordination and review responses",
+        "body": "Within the delegated scope, handle requirements questions, progress updates, deliverable announcements, and review responses in Slack, then continue fixing and verifying from feedback."
       },
       {
-        "title": "Accumulated knowledge",
-        "body": "The reasons and background behind decisions are saved as memories and recalled in later work. Failures feed back into fixing the procedures themselves."
+        "title": "Continuous execution and handoff",
+        "body": "Always-on processes check requests and replies and resume work as dependencies clear. For my own products, they handle merge and cleanup; in other teams, they follow the agreed approval and release process."
       },
       {
-        "title": "Always-on operation",
-        "body": "Resident processes pick up requests from Slack and scheduled tasks, and notify me only when a decision needs a human."
+        "title": "Memory and continuous improvement",
+        "body": "Retain agreements, decision context, and open questions for later work. Improve procedures from results and feedback, then check the outcomes in subsequent runs."
       }
     ],
     "stats": [
       {
-        "value": "~800",
-        "label": "pull requests merged across my company's repositories, January–September 2026"
+        "value": "3,064",
+        "label": "pull requests merged across my company's repositories, September–November 9, 2026"
       },
       {
-        "value": "163",
-        "label": "pull requests merged in September 2026 (27 days) on the platform's own codebase"
+        "value": "1,326",
+        "label": "of those, pull requests merged in the development platform's own repository over the same period"
       }
     ],
-    "note": "Figures counted from GitHub records as of September 27, 2026.",
+    "note": "Counted from GitHub records as of November 9, 2026, 06:25 JST. Includes feature development, improvements, and memory and configuration updates.",
     "highlights": [
       {
         "title": "Implementation is delegated",
@@ -77,12 +77,12 @@
         "body": "The upstream communication that development needs — talking with teammates, confirming specifications — is handled by AI as well. The only part I do myself is attending the actual meetings."
       },
       {
-        "title": "A closed context",
-        "body": "Meeting content is handed to the AI too, so work moves forward with every piece of context the job needs already in the AI's hands."
+        "title": "From meetings to follow-through",
+        "body": "Meeting content goes to the AI too, carrying agreements and decision context into later work. It organizes responsibilities and dependencies and moves through clarification, implementation, and handoff."
       }
     ],
     "link": {
-      "label": "About Mipockle, the AI work partner behind this way of working",
+      "label": "About Mipockle, the autonomous development agent",
       "url": "https://0ai-inc.com/en/mipockle/"
     }
   },
@@ -93,27 +93,236 @@
       "org": "0ai Inc.",
       "position": "Founder",
       "points": [
-        "Building Deprex, a platform where AI agents live inside a company's Slack, email, and documents and run business operations 24/7.",
-        "Building other AI agent products, including a meeting agent that joins calls to add context and advice, and a personal AI assistant that carries out everyday tasks.",
-        "Designing, building, and operating the autonomous development system that runs the company's development and operations."
+        "Developing and delivering Deprex to help companies become AI-native by redesigning operations and organizational structures around AI. I use each customer’s business goals, decision criteria, and budget to design, implement, and continuously improve human and AI roles, cross-functional workflows, and the operating environment.",
+        "In clinic marketing, designed autonomous operations spanning production, approvals, publishing, and stakeholder coordination while retaining required human decisions. Implemented ongoing Instagram operations and am gradually extending adoption to YouTube workflow coordination.",
+        "Automated the workflow from Meta advertising data analysis through planning and ad creative production. Also automated video editing, connecting analysis with content production.",
+        "Automated back-office operations with AI, including bookkeeping, labor administration, year-end accounting, and tax filing.",
+        "For a sales outsourcing company, designed and implemented an AI research workflow that prioritizes fit with the offering and the contact’s responsibilities, current information, and supporting evidence. Developing sales lists for informed prospecting and validating the workflow on sample cases.",
+        "Starting with individual workflows, the goal is an organization where AI also supports the planning and progress management of human work. I work alongside customers from discovery through implementation, operation, and redesign, reducing routine instructions and checks concentrated on executives and opening up different choices about staffing, outsourcing, hiring, and growth strategy.",
+        "Building AI products, including meeting agents and personal assistants, that carry context from users’ work and everyday lives into action.",
+        "Designed, built, and operate the autonomous development system behind the company’s own work, connecting requirements, implementation, verification, and ongoing improvement."
       ],
       "tech": [
-        "Claude Code",
-        "Codex",
         "Python",
         "TypeScript",
-        "GitHub"
+        "JavaScript",
+        "Node.js",
+        "Claude Code",
+        "Codex",
+        "Pi",
+        "MCP",
+        "GitHub",
+        "GitHub Actions",
+        "uv",
+        "pytest",
+        "Vitest",
+        "Claude API",
+        "OpenAI API",
+        "Gemini API",
+        "GLM",
+        "Kimi",
+        "Jev",
+        "Groq",
+        "GPT Image",
+        "Grok",
+        "Vexa",
+        "Recall.ai",
+        "ElevenLabs",
+        "Scribe",
+        "Whisper",
+        "Fish Audio",
+        "Qwen3-TTS",
+        "Pipecat",
+        "WebRTC",
+        "WebSocket",
+        "Seedance",
+        "Remotion",
+        "FFmpeg",
+        "PyAV",
+        "OpenCV",
+        "Pillow",
+        "NumPy",
+        "RapidOCR",
+        "ONNX Runtime",
+        "MLX",
+        "PyTorch",
+        "React",
+        "Astro",
+        "Vite",
+        "Tailwind CSS",
+        "Three.js",
+        "i18next",
+        "FastAPI",
+        "aiohttp",
+        "Starlette",
+        "Uvicorn",
+        "Google Cloud Run",
+        "Google Cloud Storage",
+        "Firebase Authentication",
+        "Firestore",
+        "Cloudflare Workers",
+        "Cloudflare Pages",
+        "Cloudflare Access",
+        "Cloudflare Durable Objects",
+        "Cloudflare KV",
+        "SQLite",
+        "Terraform",
+        "Docker",
+        "OAuth 2.0",
+        "Bitwarden Secrets Manager",
+        "Auth0",
+        "Bitwarden",
+        "GCP",
+        "Firebase",
+        "Cloudflare",
+        "Slack API",
+        "Google Workspace API",
+        "Meta Marketing API",
+        "Instagram Graph API",
+        "YouTube Data API",
+        "Canva MCP",
+        "Jina Reader",
+        "Playwright",
+        "agent-browser",
+        "freee",
+        "Google Analytics",
+        "Microsoft Clarity",
+        "Canva",
+        "Twilio"
+      ],
+      "techGroups": [
+        {
+          "area": "Languages & development",
+          "items": [
+            "Python",
+            "TypeScript",
+            "JavaScript",
+            "Node.js",
+            "Claude Code",
+            "Codex",
+            "Pi",
+            "MCP",
+            "GitHub",
+            "GitHub Actions",
+            "uv",
+            "pytest",
+            "Vitest"
+          ]
+        },
+        {
+          "area": "LLMs & image generation",
+          "items": [
+            "Claude API",
+            "OpenAI API",
+            "Gemini API",
+            "GLM",
+            "Kimi",
+            "Jev",
+            "Groq",
+            "GPT Image",
+            "Grok"
+          ]
+        },
+        {
+          "area": "Voice & meeting agents",
+          "items": [
+            "Vexa",
+            "Recall.ai",
+            "ElevenLabs",
+            "Scribe",
+            "Whisper",
+            "Fish Audio",
+            "Qwen3-TTS",
+            "Pipecat",
+            "WebRTC",
+            "WebSocket"
+          ]
+        },
+        {
+          "area": "Media processing & inference",
+          "items": [
+            "Seedance",
+            "Remotion",
+            "FFmpeg",
+            "PyAV",
+            "OpenCV",
+            "Pillow",
+            "NumPy",
+            "RapidOCR",
+            "ONNX Runtime",
+            "MLX",
+            "PyTorch"
+          ]
+        },
+        {
+          "area": "Web & server",
+          "items": [
+            "React",
+            "Astro",
+            "Vite",
+            "Tailwind CSS",
+            "Three.js",
+            "i18next",
+            "FastAPI",
+            "aiohttp",
+            "Starlette",
+            "Uvicorn"
+          ]
+        },
+        {
+          "area": "Cloud, data & authentication",
+          "items": [
+            "Google Cloud Run",
+            "Google Cloud Storage",
+            "Firebase Authentication",
+            "Firestore",
+            "Cloudflare Workers",
+            "Cloudflare Pages",
+            "Cloudflare Access",
+            "Cloudflare Durable Objects",
+            "Cloudflare KV",
+            "SQLite",
+            "Terraform",
+            "Docker",
+            "OAuth 2.0",
+            "Bitwarden Secrets Manager",
+            "Auth0",
+            "Bitwarden",
+            "GCP",
+            "Firebase",
+            "Cloudflare"
+          ]
+        },
+        {
+          "area": "Business integrations & browser automation",
+          "items": [
+            "Slack API",
+            "Google Workspace API",
+            "Meta Marketing API",
+            "Instagram Graph API",
+            "YouTube Data API",
+            "Canva MCP",
+            "Jina Reader",
+            "Playwright",
+            "agent-browser",
+            "freee",
+            "Google Analytics",
+            "Microsoft Clarity",
+            "Canva",
+            "Twilio"
+          ]
+        }
       ]
     },
     {
       "id": "pharma-saas",
-      "period": "Oct 2025 – Present",
+      "period": "Oct 2025 – Dec 2026 (planned end)",
       "org": "SaaS company serving the pharmaceutical industry",
       "position": "AI Engineer (contract)",
       "points": [
-        "Designed and built AI tools that produce materials for pharmaceutical companies — web pages, slides, animated slide videos, and AI avatar videos — including web pages generated from PDFs, slides generated from papers, and script generation.",
-        "Integrated speech synthesis and AI avatar APIs and built the video generation pipeline.",
-        "Rolled out a coding agent (Claude Code) environment to the team and set up the design and evaluation framework for its agents."
+        "Designed and implemented an AI agent system for pharmaceutical content production, enabling team-wide operations from web, slide, and video production through client delivery.",
+        "Responsible for AI technology research, prototype validation, and system and API cost estimates, evaluating architectures against production requirements, output quality, and execution costs.",
+        "Implemented recursive revision to meet pharmaceutical compliance requirements. Built a Claude Code-based framework connecting agent design and implementation with evaluation and recursive improvement."
       ],
       "tech": [
         "TypeScript",
@@ -123,7 +332,10 @@
         "LangGraph",
         "Langfuse",
         "AWS",
-        "Terraform"
+        "Terraform",
+        "HeyGen",
+        "ElevenLabs",
+        "Seedance"
       ]
     },
     {
@@ -132,10 +344,10 @@
       "org": "Startup",
       "position": "CTO / Tech Lead (full-time; seconded as a director to a subsidiary)",
       "points": [
-        "At the subsidiary, built a grief-tech service that lets people talk with the deceased, combining voice cloning, lip sync, and video generated to match the conversation.",
-        "At the parent company, built a tool that analyzes why social videos go viral and a tool that automatically generates YouTube videos. Published about 300 generated videos in the first three weeks, reaching 350,000 total views.",
-        "Set up deployment with Terraform and GitHub Actions in two weeks. A serverless-first architecture cut infrastructure costs to about one fifth of an always-on server setup.",
-        "As product owner, led requirements, the roadmap, and task management for a team of three."
+        "As CTO and tech lead, helped launch generative AI services for video analysis and automated production, as well as a grief-tech service at a subsidiary. Initially built the web application, APIs, and infrastructure on my own, then led a three-person team as product owner.",
+        "Worked with business executives and frontline users to clarify requirements, issues, and schedules and translate them into a roadmap and priorities. Fed user feedback into planning and handled requirements, specification checks, code reviews, and team task management.",
+        "Selected a serverless-first architecture for the PoC’s budget and workload characteristics, running long or compute-intensive tasks only when needed. Established Terraform and GitHub Actions deployment in two weeks and reduced infrastructure costs to roughly one fifth of an always-on setup.",
+        "Set up prompt management and output validation so non-engineers could participate in refinement. Automated YouTube production and publishing delivered about 300 videos and 350,000 total views in the first three weeks."
       ],
       "tech": [
         "Python",
@@ -155,8 +367,9 @@
       "org": "Asset management company",
       "position": "Web Engineer (freelance)",
       "points": [
-        "Developed a robo-advisor web app: support for Japan's new NISA tax-free investment program, a large refactoring of the recurring investment settings, and public identity verification with the My Number Card.",
-        "Improved how the team ran Scrum and raised its velocity about 2.5×. Worked in English with international team members."
+        "Joined development of a robo-advisor investment service. Delivered changes for regulatory program updates while keeping existing business logic and interface specifications consistent.",
+        "Refactored complex interface architecture to separate business logic from the UI, making ongoing changes easier to maintain.",
+        "Contributed to organizational and development-process improvements that raised team velocity and throughput by about 2.5×. Took turns as Scrum Master and collaborated in English with international teammates."
       ],
       "tech": [
         "React",
@@ -172,8 +385,9 @@
       "org": "Education nonprofit",
       "position": "Engineer (freelance, sole developer)",
       "points": [
-        "Built, on my own from requirements to operation, a web system that manages reservations for free tutoring sessions and assigns students to locations.",
-        "Set up a serverless architecture with infrastructure as code, CI/CD, automated integration tests, and Slack alerts on failure, keeping it running with little operational effort."
+        "Built a new reservation and operations-management system for an education nonprofit as its sole engineer, covering requirements, architecture, implementation, integration testing, and operation.",
+        "Selected serverless and data architectures based on how students and administrators worked, expected traffic, and cost. Built a setup suited to the operating scale and handled environment migration and changes to the data platform.",
+        "Established infrastructure as code for development and production, CI/CD, centralized API specifications, automated testing of critical workflows, and failure alerts, creating a foundation one engineer could continue to develop and operate."
       ],
       "tech": [
         "React",
@@ -192,7 +406,8 @@
       "org": "Automotive services company",
       "position": "Mobile App Engineer (freelance)",
       "points": [
-        "Worked on requirements and specifications for a super app that brings car-related services into one app, and implemented web view integration and push notification control."
+        "Worked from requirements and specifications through implementation on a mobile app integrating automotive services. Was subsequently assigned upstream specification work to support the wider team.",
+        "Collaborated closely with decision-makers to clarify the service redesign and requirements, combining them into cross-screen specifications from a UX perspective and refining them until teammates could start implementation."
       ],
       "tech": [
         "Flutter",
@@ -205,7 +420,10 @@
       "org": "Sake e-commerce startup",
       "position": "Full-Stack Engineer (freelance)",
       "points": [
-        "Built a new e-commerce site and a review app from scratch, including a lottery sales system for popular items, localization and SEO, and the iOS and Android releases."
+        "Worked across requirements, UI/UX design, testing, and release for new e-commerce and mobile applications. Communicated directly with decision-makers to turn business needs into concrete specifications.",
+        "Designed and implemented the wider service experience, including peak-traffic handling, localization, and SEO, and handled web, iOS, and Android development and releases.",
+        "Used Google Analytics device data and Microsoft Clarity usage observations to identify target environments and UX issues and inform interface and product-improvement decisions.",
+        "Covered specification decisions and team scheduling when the lead was absent. Proposed knowledge-sharing and retrospective sessions and contributed to better coordination and development practices."
       ],
       "tech": [
         "Next.js",
@@ -220,7 +438,8 @@
       "org": "Financial company in Singapore",
       "position": "Web Engineer (freelance)",
       "points": [
-        "Improved an FX trading system, implementing role-based access control and localization."
+        "Joined a financial trading service in Singapore to improve an existing system, focusing on refactoring, bug fixes, and ongoing maintenance.",
+        "Handled most of a large localization effort independently and implemented access management reflecting user and operator responsibilities."
       ],
       "tech": [
         "Vue",
@@ -234,7 +453,8 @@
       "org": "Software development agency",
       "position": "Frontend Engineer (freelance)",
       "points": [
-        "Developed web and mobile apps for parents of students at an online tutoring school, building more than ten screens and reviewing team members' code."
+        "Joined the early development of web and mobile applications for parents of students at an online tutoring school, focusing on frontend development.",
+        "Identified gaps in specifications and helped clarify them before implementation. Supported delivery and quality through specification and implementation advice, code reviews, and team task management."
       ],
       "tech": [
         "React",
@@ -245,10 +465,12 @@
     {
       "id": "in-house-se",
       "period": "Feb 2019 – Dec 2020",
-      "org": "Operating company",
+      "org": "IT company developing its own products",
       "position": "Full-Stack Engineer",
       "points": [
-        "Built an in-house RPA tool and a web console that runs it remotely, covering everything from requirements to testing, and prototyped an image-processing model."
+        "Worked across requirements, UI/UX design, frontend, backend, infrastructure, and testing to launch an in-house RPA product and its web management system.",
+        "Compared language characteristics and performance against the team’s budget and use cases, taking responsibility for technology selection and architecture design.",
+        "Designed access models, communication approaches, and AWS network and data architecture to connect a desktop product with cloud services. Also developed and tested an image-processing AI prototype."
       ],
       "tech": [
         "C#",
@@ -273,7 +495,21 @@
         "LangSmith",
         "Langfuse",
         "Claude / OpenAI / Gemini APIs",
-        "Speech synthesis and video generation APIs"
+        "Speech synthesis and video generation APIs",
+        "Pi",
+        "GLM",
+        "Kimi",
+        "Jev",
+        "Groq",
+        "MCP",
+        "Vexa",
+        "Recall.ai",
+        "ElevenLabs",
+        "Whisper",
+        "Fish Audio",
+        "Seedance",
+        "GPT Image",
+        "Grok"
       ]
     },
     {
@@ -284,14 +520,23 @@
         "Next.js",
         "Remotion",
         "Tailwind CSS",
-        "Flutter"
+        "Flutter",
+        "Astro",
+        "Vite",
+        "Three.js",
+        "Google Analytics",
+        "Microsoft Clarity"
       ]
     },
     {
       "area": "Backend",
       "items": [
         "Python (FastAPI)",
-        "Node.js"
+        "Node.js",
+        "aiohttp",
+        "Starlette",
+        "WebSocket",
+        "SQLite"
       ]
     },
     {
@@ -302,18 +547,31 @@
         "Terraform",
         "Serverless Framework",
         "GitHub Actions",
-        "Docker"
+        "Docker",
+        "Cloudflare Workers / Pages / Access",
+        "Firebase / Firestore",
+        "Google Cloud Run / Cloud Storage",
+        "Bitwarden Secrets Manager",
+        "Auth0",
+        "Bitwarden",
+        "Firebase",
+        "Cloudflare",
+        "Canva",
+        "Twilio"
       ]
     }
   ],
   "links": [
     {
-      "label": "0ai Inc.",
-      "url": "https://0ai-inc.com/en/"
+      "label": "0ai Inc. website",
+      "url": "https://0ai-inc.com/en/",
+      "icon": "website"
     },
     {
       "label": "GitHub",
-      "url": "https://github.com/ig-freetech"
+      "url": "https://github.com/ig-freetech",
+      "icon": "github"
     }
-  ]
+  ],
+  "portrait": "/assets/genki-ikeda.webp"
 }

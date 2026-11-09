@@ -22,22 +22,28 @@
     <header class="hero">
       <div class="container">
         <nav class="topbar" aria-label="Language"><a class="lang-switch" href="/" hreflang="ja" lang="ja">日本語</a></nav>
+        <div class="hero-profile">
+        <div class="hero-copy">
         <p class="name-sub" lang="ja">池田 元気</p>
         <h1 class="name">Genki Ikeda</h1>
         <p class="role">Software Engineer / Founder of 0ai Inc.</p>
+        <ul class="links"><li><a href="https://0ai-inc.com/en/"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/></svg><span>0ai Inc. website</span></a></li><li><a href="https://github.com/ig-freetech"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></svg><span>GitHub</span></a></li></ul>
         <p class="tagline">I build the system that lets AI agents do the development, and run everything from clarifying requirements to design, implementation, review, and merge on it.</p>
+        </div>
+        <img class="hero-portrait" src="/assets/genki-ikeda.webp" alt="Genki Ikeda" width="720" height="960" fetchpriority="high" decoding="async">
+        </div>
       </div>
     </header>
     <main class="container">
       <section aria-labelledby="about">
         <h2 id="about">About</h2>
-        <p>I have worked on full-stack web and cloud development since 2019. Working mostly with startups and nonprofits, I have often built the frontend, backend, and infrastructure of new products on my own.</p>
-        <p>Since 2024 I have focused on building products with generative AI. I led generative AI products as CTO and tech lead at a startup, and since October 2025 I have worked as a contract AI engineer at a SaaS company serving the pharmaceutical industry. In January 2026 I founded 0ai Inc., where I build products in which AI agents carry out business operations on their own.</p>
-        <p>I also hand my own development over to an autonomous development system I built. People focus on goals and judgment calls; agents handle the repetitive work of implementing, verifying, and merging. That is how I work every day.</p>
+        <p>I have worked on full-stack web and cloud development since 2019. Across startups and nonprofits, I have translated business goals and budgets into requirements, specifications, and architecture, then carried the work through development and operation.</p>
+        <p>Since 2024 I have focused on building products with generative AI. I led generative AI products as CTO and tech lead at a startup, and founded 0ai Inc. in January 2026 to build and deliver AI-enabled ways of working, including Deprex, which redesigns company operations and organizational structures around AI.</p>
+        <p>I also delegate my own development to Mipockle, the autonomous development agent I build. I focus on goals and important decisions while the agent handles requirements, implementation, verification, and coordination with teammates.</p>
       </section>
       <section aria-labelledby="system">
-        <h2 id="system">Autonomous development system</h2>
-        <p class="lead">A development platform in which agents follow defined procedures from clarifying requirements all the way to merging and cleaning up. The procedures and decision rules are kept independent of the agent runtime, so the same workflow runs on both Claude Code and Codex.</p>
+        <h2 id="system">Mipockle — autonomous development agent</h2>
+        <p class="lead">Mipockle carries context from Slack, development tickets, documents, and meetings through requirements, implementation, verification with real data, and coordination with teammates. I design, build, and operate the system that lets it work continuously using Claude Code and Codex.</p>
         <ul class="highlights">
           <li>
             <h3>Implementation is delegated</h3>
@@ -48,48 +54,48 @@
             <p>The upstream communication that development needs — talking with teammates, confirming specifications — is handled by AI as well. The only part I do myself is attending the actual meetings.</p>
           </li>
           <li>
-            <h3>A closed context</h3>
-            <p>Meeting content is handed to the AI too, so work moves forward with every piece of context the job needs already in the AI's hands.</p>
+            <h3>From meetings to follow-through</h3>
+            <p>Meeting content goes to the AI too, carrying agreements and decision context into later work. It organizes responsibilities and dependencies and moves through clarification, implementation, and handoff.</p>
           </li>
         </ul>
         <div class="stats">
           <div class="stat">
-            <p class="stat-value">~800</p>
-            <p class="stat-label">pull requests merged across my company's repositories, January–September 2026</p>
+            <p class="stat-value">3,064</p>
+            <p class="stat-label">pull requests merged across my company's repositories, September–<span class="nowrap">November 9, 2026</span></p>
           </div>
           <div class="stat">
-            <p class="stat-value">163</p>
-            <p class="stat-label">pull requests merged in September 2026 <span class="nowrap">(27 days)</span> on the platform's own codebase</p>
+            <p class="stat-value">1,326</p>
+            <p class="stat-label">of those, pull requests merged in the development platform's own repository over the same period</p>
           </div>
         </div>
-        <p class="note">Figures counted from GitHub records as of <span class="nowrap">September 27, 2026</span>.</p>
+        <p class="note">Counted from GitHub records as of <span class="nowrap">November 9, 2026</span>, 06:25 JST. Includes feature development, improvements, and memory and configuration updates.</p>
         <ol class="steps">
           <li class="step">
-            <h3>Requirements and design</h3>
-            <p>Goals and acceptance criteria are settled through dialogue. Important decisions are challenged by a separate reviewer agent that has no access to the conversation that produced them.</p>
+            <h3>Understand the work and requirements</h3>
+            <p>Cross-check Slack, tickets, documents, and meetings to identify my responsibilities, agreements, and open questions, then define the change from the goal and expected outcome.</p>
           </li>
           <li class="step">
-            <h3>Implementation</h3>
-            <p>Each piece of work automatically gets its own issue, pull request, and isolated worktree, so several tasks can be implemented in parallel.</p>
+            <h3>Design and implementation</h3>
+            <p>Study existing code and specifications, create an issue, pull request, and isolated workspace for each change, and implement with dependencies in mind. An independent reviewer checks important design decisions.</p>
           </li>
           <li class="step">
-            <h3>Verification</h3>
-            <p>Besides tests, a reviewer agent without the authoring context checks the result against the acceptance criteria. Anything where appearance matters is checked in a real rendering.</p>
+            <h3>Verify real data and outputs</h3>
+            <p>Beyond tests, check incomplete input, resuming interrupted work, and actual rendering and output. A reviewer without the authoring conversation checks the result against the expected outcome.</p>
           </li>
           <li class="step">
-            <h3>Merge and cleanup</h3>
-            <p>Merging, cleaning up branches and worktrees, and updating issues and project status are all automated.</p>
+            <h3>Coordination and review responses</h3>
+            <p>Within the delegated scope, handle requirements questions, progress updates, deliverable announcements, and review responses in Slack, then continue fixing and verifying from feedback.</p>
           </li>
           <li class="step">
-            <h3>Accumulated knowledge</h3>
-            <p>The reasons and background behind decisions are saved as memories and recalled in later work. Failures feed back into fixing the procedures themselves.</p>
+            <h3>Continuous execution and handoff</h3>
+            <p>Always-on processes check requests and replies and resume work as dependencies clear. For my own products, they handle merge and cleanup; in other teams, they follow the agreed approval and release process.</p>
           </li>
           <li class="step">
-            <h3>Always-on operation</h3>
-            <p>Resident processes pick up requests from Slack and scheduled tasks, and notify me only when a decision needs a human.</p>
+            <h3>Memory and continuous improvement</h3>
+            <p>Retain agreements, decision context, and open questions for later work. Improve procedures from results and feedback, then check the outcomes in subsequent runs.</p>
           </li>
         </ol>
-        <p class="more"><a href="https://0ai-inc.com/en/mipockle/">About Mipockle, the AI work partner behind this way of working</a></p>
+        <p class="more"><a href="https://0ai-inc.com/en/mipockle/">About Mipockle, the autonomous development agent</a></p>
       </section>
       <section aria-labelledby="experience">
         <h2 id="experience">Experience</h2>
@@ -99,17 +105,45 @@
           <div class="job-body">
             <h3 class="job-org">0ai Inc.</h3>
             <p class="job-position">Founder</p>
-            <ul class="job-points"><li>Building Deprex, a platform where AI agents live inside a company's Slack, email, and documents and run business operations 24/7.</li><li>Building other AI agent products, including a meeting agent that joins calls to add context and advice, and a personal AI assistant that carries out everyday tasks.</li><li>Designing, building, and operating the autonomous development system that runs the company's development and operations.</li></ul>
-            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">GitHub</span></p>
+            <ul class="job-points"><li>Developing and delivering Deprex to help companies become AI-native by redesigning operations and organizational structures around AI. I use each customer’s business goals, decision criteria, and budget to design, implement, and continuously improve human and AI roles, cross-functional workflows, and the operating environment.</li><li>In clinic marketing, designed autonomous operations spanning production, approvals, publishing, and stakeholder coordination while retaining required human decisions. Implemented ongoing Instagram operations and am gradually extending adoption to YouTube workflow coordination.</li><li>Automated the workflow from Meta advertising data analysis through planning and ad creative production. Also automated video editing, connecting analysis with content production.</li><li>Automated back-office operations with AI, including bookkeeping, labor administration, year-end accounting, and tax filing.</li><li>For a sales outsourcing company, designed and implemented an AI research workflow that prioritizes fit with the offering and the contact’s responsibilities, current information, and supporting evidence. Developing sales lists for informed prospecting and validating the workflow on sample cases.</li><li>Starting with individual workflows, the goal is an organization where AI also supports the planning and progress management of human work. I work alongside customers from discovery through implementation, operation, and redesign, reducing routine instructions and checks concentrated on executives and opening up different choices about staffing, outsourcing, hiring, and growth strategy.</li><li>Building AI products, including meeting agents and personal assistants, that carry context from users’ work and everyday lives into action.</li><li>Designed, built, and operate the autonomous development system behind the company’s own work, connecting requirements, implementation, verification, and ongoing improvement.</li></ul>
+            <div class="job-tech" aria-label="Tech">
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">Languages &amp; development</h4>
+                <p><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">Pi</span><span class="tag">MCP</span><span class="tag">GitHub</span><span class="tag">GitHub Actions</span><span class="tag">uv</span><span class="tag">pytest</span><span class="tag">Vitest</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">LLMs &amp; image generation</h4>
+                <p><span class="tag">Claude API</span><span class="tag">OpenAI API</span><span class="tag">Gemini API</span><span class="tag">GLM</span><span class="tag">Kimi</span><span class="tag">Jev</span><span class="tag">Groq</span><span class="tag">GPT Image</span><span class="tag">Grok</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">Voice &amp; meeting agents</h4>
+                <p><span class="tag">Vexa</span><span class="tag">Recall.ai</span><span class="tag">ElevenLabs</span><span class="tag">Scribe</span><span class="tag">Whisper</span><span class="tag">Fish Audio</span><span class="tag">Qwen3-TTS</span><span class="tag">Pipecat</span><span class="tag">WebRTC</span><span class="tag">WebSocket</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">Media processing &amp; inference</h4>
+                <p><span class="tag">Seedance</span><span class="tag">Remotion</span><span class="tag">FFmpeg</span><span class="tag">PyAV</span><span class="tag">OpenCV</span><span class="tag">Pillow</span><span class="tag">NumPy</span><span class="tag">RapidOCR</span><span class="tag">ONNX Runtime</span><span class="tag">MLX</span><span class="tag">PyTorch</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">Web &amp; server</h4>
+                <p><span class="tag">React</span><span class="tag">Astro</span><span class="tag">Vite</span><span class="tag">Tailwind CSS</span><span class="tag">Three.js</span><span class="tag">i18next</span><span class="tag">FastAPI</span><span class="tag">aiohttp</span><span class="tag">Starlette</span><span class="tag">Uvicorn</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">Cloud, data &amp; authentication</h4>
+                <p><span class="tag">Google Cloud Run</span><span class="tag">Google Cloud Storage</span><span class="tag">Firebase Authentication</span><span class="tag">Firestore</span><span class="tag">Cloudflare Workers</span><span class="tag">Cloudflare Pages</span><span class="tag">Cloudflare Access</span><span class="tag">Cloudflare Durable Objects</span><span class="tag">Cloudflare KV</span><span class="tag">SQLite</span><span class="tag">Terraform</span><span class="tag">Docker</span><span class="tag">OAuth 2.0</span><span class="tag">Bitwarden Secrets Manager</span><span class="tag">Auth0</span><span class="tag">Bitwarden</span><span class="tag">GCP</span><span class="tag">Firebase</span><span class="tag">Cloudflare</span></p>
+              </div>
+              <div class="job-tech-group">
+                <h4 class="job-tech-heading">Business integrations &amp; browser automation</h4>
+                <p><span class="tag">Slack API</span><span class="tag">Google Workspace API</span><span class="tag">Meta Marketing API</span><span class="tag">Instagram Graph API</span><span class="tag">YouTube Data API</span><span class="tag">Canva MCP</span><span class="tag">Jina Reader</span><span class="tag">Playwright</span><span class="tag">agent-browser</span><span class="tag">freee</span><span class="tag">Google Analytics</span><span class="tag">Microsoft Clarity</span><span class="tag">Canva</span><span class="tag">Twilio</span></p>
+              </div></div>
           </div>
         </li>
         <li class="job">
-          <p class="job-period">Oct 2025 – Present</p>
+          <p class="job-period">Oct 2025 – Dec 2026 (planned end)</p>
           <div class="job-body">
             <h3 class="job-org">SaaS company serving the pharmaceutical industry</h3>
             <p class="job-position">AI Engineer (contract)</p>
-            <ul class="job-points"><li>Designed and built AI tools that produce materials for pharmaceutical companies — web pages, slides, animated slide videos, and AI avatar videos — including web pages generated from PDFs, slides generated from papers, and script generation.</li><li>Integrated speech synthesis and AI avatar APIs and built the video generation pipeline.</li><li>Rolled out a coding agent (Claude Code) environment to the team and set up the design and evaluation framework for its agents.</li></ul>
-            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Remotion</span><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">Langfuse</span><span class="tag">AWS</span><span class="tag">Terraform</span></p>
+            <ul class="job-points"><li>Designed and implemented an AI agent system for pharmaceutical content production, enabling team-wide operations from web, slide, and video production through client delivery.</li><li>Responsible for AI technology research, prototype validation, and system and API cost estimates, evaluating architectures against production requirements, output quality, and execution costs.</li><li>Implemented recursive revision to meet pharmaceutical compliance requirements. Built a Claude Code-based framework connecting agent design and implementation with evaluation and recursive improvement.</li></ul>
+            <div class="job-tech" aria-label="Tech"><p><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Remotion</span><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">Langfuse</span><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">HeyGen</span><span class="tag">ElevenLabs</span><span class="tag">Seedance</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -117,8 +151,8 @@
           <div class="job-body">
             <h3 class="job-org">Startup</h3>
             <p class="job-position">CTO / Tech Lead (full-time; seconded as a director to a subsidiary)</p>
-            <ul class="job-points"><li>At the subsidiary, built a grief-tech service that lets people talk with the deceased, combining voice cloning, lip sync, and video generated to match the conversation.</li><li>At the parent company, built a tool that analyzes why social videos go viral and a tool that automatically generates YouTube videos. Published about 300 generated videos in the first three weeks, reaching 350,000 total views.</li><li>Set up deployment with Terraform and GitHub Actions in two weeks. A serverless-first architecture cut infrastructure costs to about one fifth of an always-on server setup.</li><li>As product owner, led requirements, the roadmap, and task management for a team of three.</li></ul>
-            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">LangSmith</span><span class="tag">Next.js</span><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Gemini API</span></p>
+            <ul class="job-points"><li>As CTO and tech lead, helped launch generative AI services for video analysis and automated production, as well as a grief-tech service at a subsidiary. Initially built the web application, APIs, and infrastructure on my own, then led a three-person team as product owner.</li><li>Worked with business executives and frontline users to clarify requirements, issues, and schedules and translate them into a roadmap and priorities. Fed user feedback into planning and handled requirements, specification checks, code reviews, and team task management.</li><li>Selected a serverless-first architecture for the PoC’s budget and workload characteristics, running long or compute-intensive tasks only when needed. Established Terraform and GitHub Actions deployment in two weeks and reduced infrastructure costs to roughly one fifth of an always-on setup.</li><li>Set up prompt management and output validation so non-engineers could participate in refinement. Automated YouTube production and publishing delivered about 300 videos and 350,000 total views in the first three weeks.</li></ul>
+            <div class="job-tech" aria-label="Tech"><p><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">LangSmith</span><span class="tag">Next.js</span><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Gemini API</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -126,8 +160,8 @@
           <div class="job-body">
             <h3 class="job-org">Asset management company</h3>
             <p class="job-position">Web Engineer (freelance)</p>
-            <ul class="job-points"><li>Developed a robo-advisor web app: support for Japan's new NISA tax-free investment program, a large refactoring of the recurring investment settings, and public identity verification with the My Number Card.</li><li>Improved how the team ran Scrum and raised its velocity about 2.5×. Worked in English with international team members.</li></ul>
-            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">React</span><span class="tag">Recoil</span><span class="tag">AWS Amplify</span><span class="tag">Python</span><span class="tag">FastAPI</span></p>
+            <ul class="job-points"><li>Joined development of a robo-advisor investment service. Delivered changes for regulatory program updates while keeping existing business logic and interface specifications consistent.</li><li>Refactored complex interface architecture to separate business logic from the UI, making ongoing changes easier to maintain.</li><li>Contributed to organizational and development-process improvements that raised team velocity and throughput by about 2.5×. Took turns as Scrum Master and collaborated in English with international teammates.</li></ul>
+            <div class="job-tech" aria-label="Tech"><p><span class="tag">React</span><span class="tag">Recoil</span><span class="tag">AWS Amplify</span><span class="tag">Python</span><span class="tag">FastAPI</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -135,8 +169,8 @@
           <div class="job-body">
             <h3 class="job-org">Education nonprofit</h3>
             <p class="job-position">Engineer (freelance, sole developer)</p>
-            <ul class="job-points"><li>Built, on my own from requirements to operation, a web system that manages reservations for free tutoring sessions and assigns students to locations.</li><li>Set up a serverless architecture with infrastructure as code, CI/CD, automated integration tests, and Slack alerts on failure, keeping it running with little operational effort.</li></ul>
-            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">AWS Lambda</span><span class="tag">DynamoDB</span><span class="tag">Serverless Framework</span><span class="tag">GitHub Actions</span></p>
+            <ul class="job-points"><li>Built a new reservation and operations-management system for an education nonprofit as its sole engineer, covering requirements, architecture, implementation, integration testing, and operation.</li><li>Selected serverless and data architectures based on how students and administrators worked, expected traffic, and cost. Built a setup suited to the operating scale and handled environment migration and changes to the data platform.</li><li>Established infrastructure as code for development and production, CI/CD, centralized API specifications, automated testing of critical workflows, and failure alerts, creating a foundation one engineer could continue to develop and operate.</li></ul>
+            <div class="job-tech" aria-label="Tech"><p><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">AWS Lambda</span><span class="tag">DynamoDB</span><span class="tag">Serverless Framework</span><span class="tag">GitHub Actions</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -144,8 +178,8 @@
           <div class="job-body">
             <h3 class="job-org">Automotive services company</h3>
             <p class="job-position">Mobile App Engineer (freelance)</p>
-            <ul class="job-points"><li>Worked on requirements and specifications for a super app that brings car-related services into one app, and implemented web view integration and push notification control.</li></ul>
-            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">Flutter</span><span class="tag">Firebase</span></p>
+            <ul class="job-points"><li>Worked from requirements and specifications through implementation on a mobile app integrating automotive services. Was subsequently assigned upstream specification work to support the wider team.</li><li>Collaborated closely with decision-makers to clarify the service redesign and requirements, combining them into cross-screen specifications from a UX perspective and refining them until teammates could start implementation.</li></ul>
+            <div class="job-tech" aria-label="Tech"><p><span class="tag">Flutter</span><span class="tag">Firebase</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -153,8 +187,8 @@
           <div class="job-body">
             <h3 class="job-org">Sake e-commerce startup</h3>
             <p class="job-position">Full-Stack Engineer (freelance)</p>
-            <ul class="job-points"><li>Built a new e-commerce site and a review app from scratch, including a lottery sales system for popular items, localization and SEO, and the iOS and Android releases.</li></ul>
-            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">Next.js</span><span class="tag">Shopify</span><span class="tag">Flutter</span><span class="tag">AWS</span></p>
+            <ul class="job-points"><li>Worked across requirements, UI/UX design, testing, and release for new e-commerce and mobile applications. Communicated directly with decision-makers to turn business needs into concrete specifications.</li><li>Designed and implemented the wider service experience, including peak-traffic handling, localization, and SEO, and handled web, iOS, and Android development and releases.</li><li>Used Google Analytics device data and Microsoft Clarity usage observations to identify target environments and UX issues and inform interface and product-improvement decisions.</li><li>Covered specification decisions and team scheduling when the lead was absent. Proposed knowledge-sharing and retrospective sessions and contributed to better coordination and development practices.</li></ul>
+            <div class="job-tech" aria-label="Tech"><p><span class="tag">Next.js</span><span class="tag">Shopify</span><span class="tag">Flutter</span><span class="tag">AWS</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -162,8 +196,8 @@
           <div class="job-body">
             <h3 class="job-org">Financial company in Singapore</h3>
             <p class="job-position">Web Engineer (freelance)</p>
-            <ul class="job-points"><li>Improved an FX trading system, implementing role-based access control and localization.</li></ul>
-            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">Vue</span><span class="tag">PHP</span><span class="tag">AWS</span></p>
+            <ul class="job-points"><li>Joined a financial trading service in Singapore to improve an existing system, focusing on refactoring, bug fixes, and ongoing maintenance.</li><li>Handled most of a large localization effort independently and implemented access management reflecting user and operator responsibilities.</li></ul>
+            <div class="job-tech" aria-label="Tech"><p><span class="tag">Vue</span><span class="tag">PHP</span><span class="tag">AWS</span></p></div>
           </div>
         </li>
         <li class="job">
@@ -171,17 +205,17 @@
           <div class="job-body">
             <h3 class="job-org">Software development agency</h3>
             <p class="job-position">Frontend Engineer (freelance)</p>
-            <ul class="job-points"><li>Developed web and mobile apps for parents of students at an online tutoring school, building more than ten screens and reviewing team members' code.</li></ul>
-            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">React Native</span></p>
+            <ul class="job-points"><li>Joined the early development of web and mobile applications for parents of students at an online tutoring school, focusing on frontend development.</li><li>Identified gaps in specifications and helped clarify them before implementation. Supported delivery and quality through specification and implementation advice, code reviews, and team task management.</li></ul>
+            <div class="job-tech" aria-label="Tech"><p><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">React Native</span></p></div>
           </div>
         </li>
         <li class="job">
           <p class="job-period">Feb 2019 – Dec 2020</p>
           <div class="job-body">
-            <h3 class="job-org">Operating company</h3>
+            <h3 class="job-org">IT company developing its own products</h3>
             <p class="job-position">Full-Stack Engineer</p>
-            <ul class="job-points"><li>Built an in-house RPA tool and a web console that runs it remotely, covering everything from requirements to testing, and prototyped an image-processing model.</li></ul>
-            <p class="job-tech"><span class="visually-hidden">Tech: </span><span class="tag">C#</span><span class="tag">WPF</span><span class="tag">React</span><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">AWS</span><span class="tag">MySQL</span></p>
+            <ul class="job-points"><li>Worked across requirements, UI/UX design, frontend, backend, infrastructure, and testing to launch an in-house RPA product and its web management system.</li><li>Compared language characteristics and performance against the team’s budget and use cases, taking responsibility for technology selection and architecture design.</li><li>Designed access models, communication approaches, and AWS network and data architecture to connect a desktop product with cloud services. Also developed and tested an image-processing AI prototype.</li></ul>
+            <div class="job-tech" aria-label="Tech"><p><span class="tag">C#</span><span class="tag">WPF</span><span class="tag">React</span><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">AWS</span><span class="tag">MySQL</span></p></div>
           </div>
         </li>
         </ol>
@@ -191,25 +225,21 @@
         <div class="skills">
         <div class="skill-group">
           <h3>AI &amp; agents</h3>
-          <p><span class="tag">Agent platform design (procedures, review, memory, evaluation)</span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">LangSmith</span><span class="tag">Langfuse</span><span class="tag">Claude / OpenAI / Gemini APIs</span><span class="tag">Speech synthesis and video generation APIs</span></p>
+          <p><span class="tag">Agent platform design (procedures, review, memory, evaluation)</span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">LangSmith</span><span class="tag">Langfuse</span><span class="tag">Claude / OpenAI / Gemini APIs</span><span class="tag">Speech synthesis and video generation APIs</span><span class="tag">Pi</span><span class="tag">GLM</span><span class="tag">Kimi</span><span class="tag">Jev</span><span class="tag">Groq</span><span class="tag">MCP</span><span class="tag">Vexa</span><span class="tag">Recall.ai</span><span class="tag">ElevenLabs</span><span class="tag">Whisper</span><span class="tag">Fish Audio</span><span class="tag">Seedance</span><span class="tag">GPT Image</span><span class="tag">Grok</span></p>
         </div>
         <div class="skill-group">
           <h3>Frontend</h3>
-          <p><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Remotion</span><span class="tag">Tailwind CSS</span><span class="tag">Flutter</span></p>
+          <p><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Remotion</span><span class="tag">Tailwind CSS</span><span class="tag">Flutter</span><span class="tag">Astro</span><span class="tag">Vite</span><span class="tag">Three.js</span><span class="tag">Google Analytics</span><span class="tag">Microsoft Clarity</span></p>
         </div>
         <div class="skill-group">
           <h3>Backend</h3>
-          <p><span class="tag">Python (FastAPI)</span><span class="tag">Node.js</span></p>
+          <p><span class="tag">Python (FastAPI)</span><span class="tag">Node.js</span><span class="tag">aiohttp</span><span class="tag">Starlette</span><span class="tag">WebSocket</span><span class="tag">SQLite</span></p>
         </div>
         <div class="skill-group">
           <h3>Cloud &amp; infrastructure</h3>
-          <p><span class="tag">AWS (Lambda, API Gateway, ECS Fargate, DynamoDB, S3, SQS, CloudFront, Cognito)</span><span class="tag">GCP</span><span class="tag">Terraform</span><span class="tag">Serverless Framework</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span></p>
+          <p><span class="tag">AWS (Lambda, API Gateway, ECS Fargate, DynamoDB, S3, SQS, CloudFront, Cognito)</span><span class="tag">GCP</span><span class="tag">Terraform</span><span class="tag">Serverless Framework</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span><span class="tag">Cloudflare Workers / Pages / Access</span><span class="tag">Firebase / Firestore</span><span class="tag">Google Cloud Run / Cloud Storage</span><span class="tag">Bitwarden Secrets Manager</span><span class="tag">Auth0</span><span class="tag">Bitwarden</span><span class="tag">Firebase</span><span class="tag">Cloudflare</span><span class="tag">Canva</span><span class="tag">Twilio</span></p>
         </div>
         </div>
-      </section>
-      <section aria-labelledby="links">
-        <h2 id="links">Links</h2>
-        <ul class="links"><li><a href="https://0ai-inc.com/en/">0ai Inc.</a></li><li><a href="https://github.com/ig-freetech">GitHub</a></li></ul>
       </section>
     </main>
     <footer class="container footer">
