@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://ig-freetech.github.io";
 const langs = ["ja", "en"];
+const siteName = "Genki Ikeda | CV";
 
 const esc = (value) =>
   String(value)
@@ -63,6 +64,45 @@ function page(content, { mode }) {
   const isSite = mode === "site";
   const canonical = `${siteUrl}${content.path}`;
   const alternate = `${siteUrl}${content.alternate.path}`;
+  const portraitUrl = `${siteUrl}${content.portrait}`;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        url: `${siteUrl}/`,
+        name: siteName,
+        alternateName: ["Genki Ikeda CV", "池田元気の職務経歴"],
+        inLanguage: ["ja", "en"],
+      },
+      {
+        "@type": "Person",
+        "@id": `${siteUrl}/#person`,
+        name: "Genki Ikeda",
+        alternateName: ["池田 元気", "池田元気"],
+        url: `${siteUrl}/`,
+        image: portraitUrl,
+        jobTitle: content.role,
+        worksFor: {
+          "@type": "Organization",
+          name: "株式会社0ai",
+          url: "https://0ai-inc.com/",
+        },
+        sameAs: ["https://github.com/ig-freetech"],
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": `${canonical}#profile`,
+        url: canonical,
+        name: content.meta.title,
+        description: content.meta.description,
+        inLanguage: content.lang,
+        mainEntity: { "@id": `${siteUrl}/#person` },
+        isPartOf: { "@id": `${siteUrl}/#website` },
+      },
+    ],
+  };
 
   const highlights = (content.system.highlights ?? [])
     .map(
@@ -159,11 +199,24 @@ function page(content, { mode }) {
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="alternate" hreflang="${esc(content.lang)}" href="${esc(canonical)}">
     <link rel="alternate" hreflang="${esc(content.alternate.lang)}" href="${esc(alternate)}">
+    <link rel="alternate" hreflang="x-default" href="${siteUrl}/">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="author" content="Genki Ikeda">
     <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="${esc(siteName)}">
     <meta property="og:title" content="${esc(content.meta.title)}">
     <meta property="og:description" content="${esc(content.meta.description)}">
     <meta property="og:url" content="${esc(canonical)}">
-    <meta name="twitter:card" content="summary">`
+    <meta property="og:image" content="${esc(portraitUrl)}">
+    <meta property="og:image:width" content="720">
+    <meta property="og:image:height" content="960">
+    <meta property="og:image:alt" content="${esc(content.name)}">
+    <meta property="og:locale" content="${content.lang === "ja" ? "ja_JP" : "en_US"}">
+    <meta property="og:locale:alternate" content="${content.lang === "ja" ? "en_US" : "ja_JP"}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="${esc(portraitUrl)}">
+    <script type="application/ld+json">${JSON.stringify(structuredData).replaceAll("<", "\\u003c")}</script>`
     : `
     <meta name="robots" content="noindex">`;
 
@@ -262,3 +315,15 @@ for (const lang of langs) {
     write(`out/resume-${lang}.html`, page(applyOverlay(content, overlay), { mode: "resume" }));
   }
 }
+
+write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`);
+write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${["/", "/en/"].map((path) => `  <url>
+    <loc>${siteUrl}${path}</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="${siteUrl}/" />
+    <xhtml:link rel="alternate" hreflang="en" href="${siteUrl}/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl}/" />
+  </url>`).join("\n")}
+</urlset>
+`);

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ig-freetech.github.io/sitemap.xml
